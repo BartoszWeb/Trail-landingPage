@@ -26,7 +26,7 @@ function HomePage() {
                     gsap.fromTo(section, { y: "100", opacity: 0, }, {
                         y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
                             trigger: section,
-                            start: "top 65%",
+                            start: "top 90%",
                         }
                     });
             });

@@ -20,9 +20,6 @@ export const Frame = styled.div`
 
   ::before {
     content: '';
-    background-image: url(${ ({ logoSrc }) => "./" + logoSrc });
-    background-size: 100px 60px;
-    background-repeat: no-repeat;
     background-color: white;
     display: block;
     position: absolute;

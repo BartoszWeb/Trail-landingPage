@@ -37,7 +37,8 @@ export const StyledButton = styled.button`
   width: 200px;
   padding: 15px;
   font-size: 20px;
-  background-color: white;
+  color: ${ ({ theme }) => theme.colors.textColor };
+  background-color: ${ ({ theme }) => theme.colors.secondaryColor };
   border: none;
 
   :hover {

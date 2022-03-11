@@ -6,9 +6,10 @@ import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { TrailSteps } from "../../atoms/TrailSteps/TrailSteps";
-import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, Frame, FakeGraph } from "./GraphSection.styles";
+import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, FakeGraph } from "./GraphSection.styles";
+import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { gsap } from "gsap";
-
+import { Frame } from "./GraphSection.styles";
 
 export const GraphSection = () => {
     const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
@@ -34,6 +35,7 @@ export const GraphSection = () => {
                 <GridTwoColumns>
                     <LeftColumn ref={ graphAnimationSelector } className="lottie-GraphAnimation">
                         <Frame width={ "90%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
+                           <LogoGraph/>
                             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
                                 Best selling pages
                             </BoxContainer>

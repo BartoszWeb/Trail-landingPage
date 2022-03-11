@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import styled from "styled-components";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { ArrowNextStep } from "../../molecules/ArrowNextStep/ArrowNextStep";
@@ -10,6 +11,10 @@ import { GridTwoColumns } from "./DialogAnimationSection.styles";
 import { LeftColumn } from "./DialogAnimationSection.styles";
 import { RightColumn } from "./DialogAnimationSection.styles";
 import { gsap } from "gsap";
+import { Logo } from "../../atoms/Logo/Logo";
+import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
+import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
+
 
 const path = "assets/trail-graph.svg";
 
@@ -28,6 +33,7 @@ export const DialogAnimationSection = () => {
         });
     }, []);
     
+    
     return (
         <>
             <DialogSectionWrapper id="how-it-works">
@@ -36,6 +42,7 @@ export const DialogAnimationSection = () => {
                     <LeftColumn>
                         <Frame width={ "90%" } logoSrc={ path } margin={ "0 auto 2em auto" }
                                padding={ "2em" }>
+                            <LogoGraph/>
                             <BoxContainer><span><b>User visited:</b> “main page"</span></BoxContainer>
                             <ArrowNextStep/>
                             <BoxContainer><span><b>User read article:</b> "How works trail?”</span></BoxContainer>
