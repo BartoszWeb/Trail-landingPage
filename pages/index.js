@@ -39,10 +39,10 @@ function HomePage() {
             <HeroAnimation/>
             <DialogAnimationSection/>
             <GraphSection/>
-            {/*<UseCaseSection/>*/}
-            {/*<TeamSection/>*/}
-            {/*<BlogSection/>*/}
-            {/*<Footer/>*/}
+            <UseCaseSection/>
+            <TeamSection/>
+            <BlogSection/>
+            <Footer/>
         </div>
     );
 }
