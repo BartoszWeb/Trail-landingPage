@@ -1,7 +1,7 @@
-import React from 'react';
-import LottieGraph from 'react-lottie-wrapper';
-import animationGraphData from './GraphAnimationData'
-import styled from 'styled-components';
+import React from "react";
+import LottieGraph from "react-lottie-wrapper";
+import animationGraphData from "./GraphAnimationData";
+import styled from "styled-components";
 
 
 const WrapperAnimation = styled.div`
@@ -10,18 +10,20 @@ const WrapperAnimation = styled.div`
 `;
 
 
-export const GraphAnimation = () => {
+function GraphAnimation() {
     const defaultOptions = {
         loop: false,
         autoplay: true,
         animationData: animationGraphData,
-        rendererSettings: { preserveAspectRatio: 'xMidYMid slice' }
+        rendererSettings: { preserveAspectRatio: "xMidYMid slice" }
     };
     return (
         <>
             <WrapperAnimation>
-                <LottieGraph tabIndex={-1} options={ defaultOptions }/>
+                <LottieGraph tabIndex={ -1 } options={ defaultOptions }/>
             </WrapperAnimation>
         </>
     );
-};
+}
+
+export default GraphAnimation;

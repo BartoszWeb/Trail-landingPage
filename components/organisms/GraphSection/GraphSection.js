@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+
 const graphTrailLogo = "assets/trail-graph.svg";
-import { GraphAnimation } from "../../atoms/GraphAnimation/GraphAnimation";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
@@ -10,6 +10,9 @@ import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, FakeGraph
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { gsap } from "gsap";
 import { Frame } from "./GraphSection.styles";
+import dynamic from "next/dynamic";
+
+const GraphAnimation = dynamic(() => import("/components/atoms/GraphAnimation/GraphAnimation"));
 
 export const GraphSection = () => {
     const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
@@ -35,7 +38,7 @@ export const GraphSection = () => {
                 <GridTwoColumns>
                     <LeftColumn ref={ graphAnimationSelector } className="lottie-GraphAnimation">
                         <Frame width={ "90%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
-                           <LogoGraph/>
+                            <LogoGraph/>
                             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
                                 Best selling pages
                             </BoxContainer>

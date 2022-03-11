@@ -1,22 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { ArrowNextStep } from "../../molecules/ArrowNextStep/ArrowNextStep";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
-import { DialogAnimation } from "../../atoms/DialogAnimation/DialogAnimation";
 import { Frame } from "../../atoms/Frame/Frame";
 import { DialogSectionWrapper } from "./DialogAnimationSection.styles";
 import { GridTwoColumns } from "./DialogAnimationSection.styles";
 import { LeftColumn } from "./DialogAnimationSection.styles";
 import { RightColumn } from "./DialogAnimationSection.styles";
 import { gsap } from "gsap";
-import { Logo } from "../../atoms/Logo/Logo";
-import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
+import dynamic from "next/dynamic";
 
 
 const path = "assets/trail-graph.svg";
+
+const DialogAnimation = dynamic(() => import('/components/atoms/DialogAnimation/DialogAnimation'))
 
 export const DialogAnimationSection = () => {
     const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
