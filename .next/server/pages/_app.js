@@ -72,7 +72,7 @@ const Paragraph = styled_components__WEBPACK_IMPORTED_MODULE_0___default().p.wit
 
 /***/ }),
 
-/***/ 654:
+/***/ 805:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -90,7 +90,7 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
 var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
-;// CONCATENATED MODULE: ./Contexts/HamburgerContext.js
+;// CONCATENATED MODULE: ./contexts/HamburgerContext.js
 
 
 const HamburgerContext = /*#__PURE__*/(0,external_react_.createContext)({
@@ -569,8 +569,8 @@ const Content = external_styled_components_default().main.withConfig({
   displayName: "MainTemplatestyle__Content",
   componentId: "sc-thsl42-0"
 })(["width:100%;margin:2em auto 0 auto;@media (max-width:1000px){margin-top:5em;}&.hidden{visibility:hidden;}"]);
-// EXTERNAL MODULE: ./Contexts/NotificationContext.js
-var NotificationContext = __webpack_require__(276);
+// EXTERNAL MODULE: ./contexts/NotificationContext.js
+var NotificationContext = __webpack_require__(4318);
 ;// CONCATENATED MODULE: ./components/organisms/Notification/Notification.styles.js
 
 const NotificationContainer = external_styled_components_default().div.withConfig({
@@ -671,7 +671,7 @@ const theme = {
     bold: 600
   }
 };
-;// CONCATENATED MODULE: ./Contexts/ThemeContext.js
+;// CONCATENATED MODULE: ./contexts/ThemeContext.js
 
 
 
@@ -681,7 +681,7 @@ function ThemeContext(props) {
     children: props.children
   });
 }
-;// CONCATENATED MODULE: ./Contexts/MultipleContexts.js
+;// CONCATENATED MODULE: ./contexts/MultipleContexts.js
 
 
 
@@ -882,7 +882,7 @@ module.exports = require("styled-components");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [400,61,364,276], () => (__webpack_exec__(654)));
+var __webpack_exports__ = __webpack_require__.X(0, [400,61,364,318], () => (__webpack_exec__(805)));
 module.exports = __webpack_exports__;
 
 })();
