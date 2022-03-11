@@ -37,7 +37,7 @@ function HomePage() {
     return (
         <div ref={ allSections }>
             <SignSection/>
-            { !isMobile && <HeroAnimation/> }
+            { isMobile && <HeroAnimation/> }
             <DialogAnimationSection/>
             <GraphSection/>
             <UseCaseSection/>
