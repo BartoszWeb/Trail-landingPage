@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 const graphTrailLogo = "assets/trail-graph.svg";
 import { GraphAnimation } from "../../atoms/GraphAnimation/GraphAnimation";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
-import { Paragraph } from "../../atoms/paragraph/paragraph";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
-import { Box } from "../../atoms/box/box";
+import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { TrailSteps } from "../../atoms/TrailSteps/TrailSteps";
 import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, Frame, FakeGraph } from "./GraphSection.styles";
 import { gsap } from "gsap";
@@ -34,39 +34,39 @@ export const GraphSection = () => {
                 <GridTwoColumns>
                     <LeftColumn ref={ graphAnimationSelector } className="lottie-GraphAnimation">
                         <Frame width={ "90%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
-                            <Box margin={ "1em 0 0 0" } fontWeight={ "500" }>
+                            <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
                                 Best selling pages
-                            </Box>
+                            </BoxContainer>
                             { isTriggerGraphAnimation ? <GraphAnimation/> : <FakeGraph/> }
                         </Frame>
                     </LeftColumn>
                     <RightColumn>
-                        <Paragraph
+                        <ParagraphHtml
                             textAlign={ "center" }
                             fontSize={ "1.6rem" }>
                             Look at pages which have the largest share of sales
-                        </Paragraph>
-                        <Paragraph
+                        </ParagraphHtml>
+                        <ParagraphHtml
                             textAlign={ "center" }
                             fontSize={ "1.3rem" }
                             fontWeight={ "400" }
                             margin={ "1em 0 0 0" }>
                             The trail shows you which pages are the most often visited by buying users.
-                        </Paragraph>
-                        <Paragraph
+                        </ParagraphHtml>
+                        <ParagraphHtml
                             textAlign={ "center" }
                             fontSize={ "1.6rem" }
                             fontWeight={ "600" }
                             margin={ "1em 0 0 0" }>
                             Make these pages more visible
-                        </Paragraph>
-                        <Paragraph
+                        </ParagraphHtml>
+                        <ParagraphHtml
                             textAlign={ "center" }
                             fontSize={ "1.3rem" }
                             fontWeight={ "400" }
                             margin={ "1.3em 0 3.5em 0" }>
                             You can highlight these pages and boost your sales.
-                        </Paragraph>
+                        </ParagraphHtml>
                         <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
                         <TrailSteps/>
                     </RightColumn>

@@ -1,4 +1,4 @@
-import { Avatar } from "../../atoms/Avatar/Avatar";
+import { AvatarImg } from "../../atoms/Avatar/AvatarImg";
 import { Time } from "../../atoms/Time/Time";
 import { Wrapper, StyledTitle, StyledPost, AvatarWrapper, AuthorInfo } from "./BlogPost.styles";
 
@@ -9,7 +9,7 @@ export const BlogPost = ({ time, title, post }) => {
         <Wrapper>
             <AuthorInfo>
                 <AvatarWrapper>
-                    <Avatar path={ path }/>
+                    <AvatarImg path={ path }/>
                 </AvatarWrapper>
                 <Time time={ time }/>
             </AuthorInfo>

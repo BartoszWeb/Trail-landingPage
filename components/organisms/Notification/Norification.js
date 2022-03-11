@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import NotificationContext from "../../../contexts/NotificationContext";
 import { NotificationContainer } from "./Notification.styles";
-import { Paragraph } from "../../atoms/Paragraph/Paragraph";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 
 
 function Notification(props) {
@@ -28,7 +28,7 @@ function Notification(props) {
     return (
         <NotificationContainer className={ activeClasses } onClick={ notificationCtx.hideNotification }>
             <h2>{ title }</h2>
-            <Paragraph>{ message }</Paragraph>
+            <ParagraphHtml>{ message }</ParagraphHtml>
         </NotificationContainer>
     );
 }

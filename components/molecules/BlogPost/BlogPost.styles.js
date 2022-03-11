@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Paragraph } from "../../atoms/Paragraph/Paragraph";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -18,14 +18,14 @@ export const Wrapper = styled.div`
     padding: 2.5em;
   }
 `;
-export const StyledTitle = styled(Paragraph)`
+export const StyledTitle = styled(ParagraphHtml)`
   font-size: 1.6rem;
   font-weight: 500;
   text-align: left;
   margin: 0 0 0.5em 0;
 `;
 
-export const StyledPost = styled(Paragraph)`
+export const StyledPost = styled(ParagraphHtml)`
   text-align: left;
 `;
 

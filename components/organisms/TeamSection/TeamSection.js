@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
-import { Avatar } from "../../atoms/avatar/avatar";
-import { Paragraph } from "../../atoms/paragraph/paragraph";
+import { AvatarImg } from "../../atoms/Avatar/AvatarImg";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 
 
 const TeamSectionWrapper = styled.section`
@@ -39,8 +39,8 @@ export const TeamSection = () => {
             <SectionSubtitle textAlign={ "right" }>Our Team</SectionSubtitle>
             <AvatarsWrapper>
                 <SingleAvatarWrapper>
-                    <Paragraph fontSize={ "18px" } textAlign={ "center" }>Bartosz</Paragraph>
-                    <Avatar path={ pathToBartoszPng }/>
+                    <ParagraphHtml fontSize={ "18px" } textAlign={ "center" }>Bartosz</ParagraphHtml>
+                    <AvatarImg path={ pathToBartoszPng }/>
                 </SingleAvatarWrapper>
             </AvatarsWrapper>
         </TeamSectionWrapper>

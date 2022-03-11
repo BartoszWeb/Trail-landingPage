@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ArrowDown } from "../../atoms/ArrowDown/ArrowDown";
-import { Paragraph } from "../../atoms/paragraph/paragraph";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 
 const Wrapper = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const ArrowNextStep = () => {
     return <>
         <Wrapper>
             <ArrowDown/>
-            <Paragraph margin={"0 0 0 0.3em"}>then</Paragraph>
+            <ParagraphHtml margin={"0 0 0 0.3em"}>then</ParagraphHtml>
         </Wrapper>
     </>
     

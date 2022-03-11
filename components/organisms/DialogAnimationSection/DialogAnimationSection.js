@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
-import { Box } from "../../atoms/Box/Box";
+import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { ArrowNextStep } from "../../molecules/ArrowNextStep/ArrowNextStep";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
 import { DialogAnimation } from "../../atoms/DialogAnimation/DialogAnimation";
@@ -36,17 +36,17 @@ export const DialogAnimationSection = () => {
                     <LeftColumn>
                         <Frame width={ "90%" } logoSrc={ path } margin={ "0 auto 2em auto" }
                                padding={ "2em" }>
-                            <Box><span><b>User visited:</b> “main page"</span></Box>
+                            <BoxContainer><span><b>User visited:</b> “main page"</span></BoxContainer>
                             <ArrowNextStep/>
-                            <Box><span><b>User read article:</b> "How works trail?”</span></Box>
+                            <BoxContainer><span><b>User read article:</b> "How works trail?”</span></BoxContainer>
                             <ArrowNextStep/>
-                            <Box><span><b>User read article:</b> “How can I boost sales with trail?”</span></Box>
+                            <BoxContainer><span><b>User read article:</b> “How can I boost sales with trail?”</span></BoxContainer>
                             <ArrowNextStep/>
-                            <Box><span><b>User visited page:</b> “Use cases”</span></Box>
+                            <BoxContainer><span><b>User visited page:</b> “Use cases”</span></BoxContainer>
                             <ArrowNextStep/>
-                            <Box><span><b>User visited page:</b> “Pricing”</span></Box>
+                            <BoxContainer><span><b>User visited page:</b> “Pricing”</span></BoxContainer>
                             <ArrowNextStep/>
-                            <Box><span><b>User singed up</b></span></Box>
+                            <BoxContainer><span><b>User singed up</b></span></BoxContainer>
                         </Frame>
                         <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
                     </LeftColumn>

@@ -6,7 +6,7 @@ const AvatarWrapper = styled.div`
 `;
 
 
-export const Avatar = ({ path }) => {
+export const AvatarImg = ({ path }) => {
     const propsAvatar = {
         src: path,
         alt: "avatar",

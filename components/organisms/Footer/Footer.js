@@ -1,5 +1,5 @@
 import { LogoReversColors } from "../../atoms/Logo/LogoReverseColors";
-import { Paragraph } from "../../atoms/Paragraph/Paragraph";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { FooterItem } from "../../atoms/FooterItem/FooterItem";
 import Link from "next/link";
 import {
@@ -23,20 +23,20 @@ export const Footer = () => {
                         </StyledLogo>
                     </Link>
                     <WrapperParagraph>
-                        <Paragraph margin={ "-0.1em 0 0 0.7em" } color={ "white" } fontSize={ "1.2rem" } textAlign={ "left" }>Get
-                            to know your customers better.</Paragraph>
+                        <ParagraphHtml margin={ "-0.1em 0 0 0.7em" } color={ "white" } fontSize={ "1.2rem" } textAlign={ "left" }>Get
+                            to know your customers better.</ParagraphHtml>
                     </WrapperParagraph>
                 </SingleItem>
                 <SingleItem>
-                    <Paragraph margin={ "1em 0 0 0" } color={ "white" } fontSize={ "1.4rem" }
-                               textAlign={ "center" }>Contact:</Paragraph>
+                    <ParagraphHtml margin={ "1em 0 0 0" } color={ "white" } fontSize={ "1.4rem" }
+                                   textAlign={ "center" }>Contact:</ParagraphHtml>
                     <Column>
                         <FooterItem href={ "/" } title={ "support@thetrail.com" }/>
                     </Column>
                 </SingleItem>
                 <SingleItem>
-                    <Paragraph margin={ "1em 0 0 0" } color={ "white" } fontSize={ "1.4rem" }
-                               textAlign={ "center" }>Product:</Paragraph>
+                    <ParagraphHtml margin={ "1em 0 0 0" } color={ "white" } fontSize={ "1.4rem" }
+                                   textAlign={ "center" }>Product:</ParagraphHtml>
                     
                     <Column>
                         <FooterItem href={ "/" } title={ "Pricing" }/>
@@ -44,8 +44,8 @@ export const Footer = () => {
                     </Column>
                 </SingleItem>
                 <SingleItem>
-                    <Paragraph margin={ "1em 0 0 0" } color={ "white" } fontSize={ "1.4rem" }
-                               textAlign={ "center" }>Resources:</Paragraph>
+                    <ParagraphHtml margin={ "1em 0 0 0" } color={ "white" } fontSize={ "1.4rem" }
+                                   textAlign={ "center" }>Resources:</ParagraphHtml>
                     <Column>
                         <FooterItem href={ "/" } title={ "Blog" }/>
                         <FooterItem href={ "/" } title={ "Case studies" }/>

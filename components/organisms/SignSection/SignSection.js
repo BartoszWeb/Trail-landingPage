@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MainHeadLine } from "../../atoms/MainHeadLine/MainHeadLine";
 import { Subtitle } from "../../atoms/Subtitles/Subtitle";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
-import { Paragraph } from "../../atoms/Paragraph/Paragraph";
+import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 
 const HeadlineWrapper = styled.header`
   display: grid;
@@ -19,8 +19,8 @@ export const SignSection = () => {
                 <MainHeadLine>Know your customers and boost your sales</MainHeadLine>
                 <Subtitle>Get your clients` buying pattern</Subtitle>
                 <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
-                <Paragraph textAlign={ "center" } margin={ "1em 0 0 0 " }>No credit cards required | No
-                    commitment</Paragraph>
+                <ParagraphHtml textAlign={ "center" } margin={ "1em 0 0 0 " }>No credit cards required | No
+                    commitment</ParagraphHtml>
             </HeadlineWrapper>
         </>
     );
