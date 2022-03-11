@@ -31,9 +31,9 @@ export const StyledPost = styled(ParagraphHtml)`
 
 export const AvatarWrapper = styled.div`
   position: absolute;
-  transform: scale(0.4);
-  top: -45px;
-  left: -25px;
+  width: 60px;
+  top: -10px;
+  left: 20px;
 `;
 
 export const AuthorInfo = styled.div`

@@ -12,6 +12,9 @@ export const GridTwoColumns = styled.div`
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 600px) {
+    margin-top: 3.5em;
+  }
 `;
 
 export const LeftColumn = styled.div`
