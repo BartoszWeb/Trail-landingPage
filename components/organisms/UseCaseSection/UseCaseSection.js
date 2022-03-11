@@ -27,7 +27,7 @@ export const UseCaseSection = () => {
                     </WrapperSVG>
                     :
                     <WrapperSVG>
-                        <IframeSvgFake src="./assets/thumb.png" onClick={ fetchYoutubeHandler }/>
+                        <IframeSvgFake src="./assets/thumb.svg" onClick={ fetchYoutubeHandler }/>
                     </WrapperSVG>
                 }
                 <StyledButton href="/signup">SIGN UP FREE</StyledButton>
