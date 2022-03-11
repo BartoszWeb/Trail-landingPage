@@ -35,7 +35,7 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   width: 200px;
-  padding: 20px;
+  padding: 15px;
   font-size: 20px;
   background-color: white;
   border: none;
