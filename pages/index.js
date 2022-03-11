@@ -36,7 +36,7 @@ function HomePage() {
     return (
         <div ref={ allSections }>
             <SignSection/>
-            <HeroAnimation/>
+            { window.innerWidth > 700 && <HeroAnimation/> }
             <DialogAnimationSection/>
             <GraphSection/>
             <UseCaseSection/>
