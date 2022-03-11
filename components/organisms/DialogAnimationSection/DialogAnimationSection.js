@@ -10,14 +10,13 @@ import { LeftColumn } from "./DialogAnimationSection.styles";
 import { RightColumn } from "./DialogAnimationSection.styles";
 import { gsap } from "gsap";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
-import dynamic from "next/dynamic";
 
 
 const path = "assets/trail-graph.svg";
 
-const DialogAnimation = dynamic(() => import('/components/atoms/DialogAnimation/DialogAnimation'))
+import { DialogAnimation } from "../../atoms/DialogAnimation/DialogAnimation";
 
-export const DialogAnimationSection = () => {
+function DialogAnimationSection () {
     const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
     const dialogAnimationSelector = useRef(null);
     
@@ -63,4 +62,6 @@ export const DialogAnimationSection = () => {
             </DialogSectionWrapper>
         </>
     );
-};
+}
+
+export default DialogAnimationSection;

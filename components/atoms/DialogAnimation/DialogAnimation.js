@@ -9,13 +9,14 @@ const WrapperAnimation = styled.div`
 `;
 
 
-function DialogAnimation() {
+export const DialogAnimation = () => {
     const defaultOptions = {
         loop: false,
         autoplay: true,
         animationData: dialogAnimation,
         rendererSettings: { preserveAspectRatio: "xMidYMid slice" }
     };
+    
     return (
         <>
             <WrapperAnimation>
@@ -23,6 +24,4 @@ function DialogAnimation() {
             </WrapperAnimation>
         </>
     );
-}
-
-export default DialogAnimation;
+};
