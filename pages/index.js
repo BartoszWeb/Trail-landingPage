@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DialogAnimationSection } from "../components/organisms/DialogAnimationSection/DialogAnimationSection";
-// import { GraphSection } from "../components/organisms/GraphSection/GraphSection";
+import { GraphSection } from "../components/organisms/GraphSection/GraphSection";
 import { SignSection } from "../components/organisms/SignSection/SignSection";
 import { HeroAnimation } from "../components/organisms/HeroAnimation/HeroAnimation";
 import { UseCaseSection } from "../components/organisms/UseCaseSection/UseCaseSection";
@@ -38,11 +38,11 @@ function HomePage() {
             <SignSection/>
             <HeroAnimation/>
             <DialogAnimationSection/>
-            {/*<GraphSection/>*/}
-            <UseCaseSection/>
-            <TeamSection/>
-            <BlogSection/>
-            <Footer/>
+            <GraphSection/>
+            {/*<UseCaseSection/>*/}
+            {/*<TeamSection/>*/}
+            {/*<BlogSection/>*/}
+            {/*<Footer/>*/}
         </div>
     );
 }
