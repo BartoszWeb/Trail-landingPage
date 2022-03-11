@@ -1,0 +1,14 @@
+{
+  "..\\components\\organisms\\HeroAnimation\\HeroAnimation.js -> /components/atoms/HeroAnimation/HeroAnimation": {
+    "id": 1921,
+    "files": [
+      "static/chunks/921.e75611cb986e7e55.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 9651,
+    "files": [
+      "static/chunks/651.243d23442247d286.js"
+    ]
+  }
+}

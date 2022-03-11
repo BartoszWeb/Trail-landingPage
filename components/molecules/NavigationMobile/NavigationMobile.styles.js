@@ -1,0 +1,33 @@
+import styled from "styled-components";
+
+export const NavContainer = styled.nav`
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: ${ ({ theme }) => theme.colors.secondaryColor };
+  z-index: 10;
+  padding: 1em 0;
+
+  @media (max-width: 1000px) {
+    display: block;
+  }
+`;
+
+export const StyledLogo = styled.a`
+  display: block;
+  width: 90px;
+  margin-top: -5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`;
+export const ListWrapper = styled.ul`
+  display: flex;
+  justify-content: space-between;
+`;
+export const ListItem = styled.li`
+  margin: 0 0.35em;
+  list-style: none;
+  color: black;
+`;
