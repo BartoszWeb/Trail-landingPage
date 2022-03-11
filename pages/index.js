@@ -11,6 +11,7 @@ import { BlogSection } from "../components/organisms/BlogSection/BlogSection";
 import { Footer } from "../components/organisms/Footer/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
+const isMobile = window.innerWidth > 700;
 
 function HomePage() {
     const allSections = useRef();
@@ -20,15 +21,14 @@ function HomePage() {
         
         sections.splice(0, 2);
         sections.pop();
-        
         if (window.innerWidth > 700) {
             sections.forEach(section => {
-                    gsap.fromTo(section, { y: "100", opacity: 0, }, {
-                        y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
-                            trigger: section,
-                            start: "top 90%",
-                        }
-                    });
+                gsap.fromTo(section, { y: "100", opacity: 0, }, {
+                    y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
+                        trigger: section,
+                        start: "top 90%",
+                    }
+                });
             });
         }
     }, []);
@@ -36,9 +36,9 @@ function HomePage() {
     return (
         <div ref={ allSections }>
             <SignSection/>
-            <HeroAnimation/>
-            {/*<DialogAnimationSection/>*/}
-            {/*<GraphSection/>*/}
+            { !isMobile && <HeroAnimation/> }
+            {/*<DialogAnimationSection/>*/ }
+            {/*<GraphSection/>*/ }
             <UseCaseSection/>
             <TeamSection/>
             <BlogSection/>
