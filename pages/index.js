@@ -9,7 +9,6 @@ import { UseCaseSection } from "../components/organisms/UseCaseSection/UseCaseSe
 import { TeamSection } from "../components/organisms/TeamSection/TeamSection";
 import { BlogSection } from "../components/organisms/BlogSection/BlogSection";
 import { Footer } from "../components/organisms/Footer/Footer";
-import { isMobile } from "react-device-detect";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,7 +36,7 @@ function HomePage() {
     return (
         <div ref={ allSections }>
             <SignSection/>
-            { isMobile && <HeroAnimation/> }
+            <HeroAnimation/>
             <DialogAnimationSection/>
             <GraphSection/>
             <UseCaseSection/>
