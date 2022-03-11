@@ -37,8 +37,8 @@ function HomePage() {
         <div ref={ allSections }>
             <SignSection/>
             <HeroAnimation/>
-            {/*<DialogAnimationSection/>*/}
-            <GraphSection/>
+            <DialogAnimationSection/>
+            {/*<GraphSection/>*/}
             <UseCaseSection/>
             <TeamSection/>
             <BlogSection/>
