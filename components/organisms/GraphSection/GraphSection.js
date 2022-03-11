@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-
 const graphTrailLogo = "assets/trail-graph.svg";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";

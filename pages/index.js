@@ -4,11 +4,12 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DialogAnimationSection } from "../components/organisms/DialogAnimationSection/DialogAnimationSection";
 import { GraphSection } from "../components/organisms/GraphSection/GraphSection";
 import { SignSection } from "../components/organisms/SignSection/SignSection";
+import { HeroAnimation } from "../components/organisms/HeroAnimation/HeroAnimation";
 import { UseCaseSection } from "../components/organisms/UseCaseSection/UseCaseSection";
 import { TeamSection } from "../components/organisms/TeamSection/TeamSection";
 import { BlogSection } from "../components/organisms/BlogSection/BlogSection";
 import { Footer } from "../components/organisms/Footer/Footer";
-import dynamic from "next/dynamic";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function HomePage() {
@@ -31,11 +32,11 @@ function HomePage() {
             });
         }
     }, []);
-    const DynamicHeroAnimation = dynamic(() => import('../components/organisms/HeroAnimation/HeroAnimation'))
+    
     return (
         <div ref={ allSections }>
             <SignSection/>
-            <DynamicHeroAnimation/>
+            <HeroAnimation/>
             <DialogAnimationSection/>
             <GraphSection/>
             <UseCaseSection/>
