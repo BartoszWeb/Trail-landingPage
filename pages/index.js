@@ -50,7 +50,7 @@ function HomePage() {
             <HeroAnimation/>
             <DialogAnimationSection/>
             <GraphSection/>
-            {/*<UseCaseSection/>*/}
+            <UseCaseSection/>
             <TeamSection/>
             <BlogSection/>
             <Footer/>
