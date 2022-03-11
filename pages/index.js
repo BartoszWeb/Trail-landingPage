@@ -37,12 +37,12 @@ function HomePage() {
         <div ref={ allSections }>
             <SignSection/>
             <HeroAnimation/>
-            <DialogAnimationSection/>
-            <GraphSection/>
-            <UseCaseSection/>
-            <TeamSection/>
-            <BlogSection/>
-            <Footer/>
+            {/*<DialogAnimationSection/>*/}
+            {/*<GraphSection/>*/}
+            {/*<UseCaseSection/>*/}
+            {/*<TeamSection/>*/}
+            {/*<BlogSection/>*/}
+            {/*<Footer/>*/}
         </div>
     );
 }
