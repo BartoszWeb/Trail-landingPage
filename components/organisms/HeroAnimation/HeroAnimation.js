@@ -18,4 +18,4 @@ function HeroAnimation() {
     );
 }
 
-export default HeroAnimation;
+export default HeroAnim;

@@ -3,6 +3,7 @@ import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { ArrowNextStep } from "../../molecules/ArrowNextStep/ArrowNextStep";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
+import { DialogAnimation } from "../../atoms/DialogAnimation/DialogAnimation";
 import { Frame } from "../../atoms/Frame/Frame";
 import { DialogSectionWrapper } from "./DialogAnimationSection.styles";
 import { GridTwoColumns } from "./DialogAnimationSection.styles";
@@ -14,9 +15,7 @@ import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 
 const path = "assets/trail-graph.svg";
 
-import { DialogAnimation } from "../../atoms/DialogAnimation/DialogAnimation";
-
-function DialogAnimationSection () {
+export const DialogAnimationSection = () => {
     const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
     const dialogAnimationSelector = useRef(null);
     
@@ -62,6 +61,4 @@ function DialogAnimationSection () {
             </DialogSectionWrapper>
         </>
     );
-}
-
-export default DialogAnimationSection;
+};

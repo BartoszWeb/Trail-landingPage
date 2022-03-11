@@ -9,9 +9,7 @@ import { TeamSection } from "../components/organisms/TeamSection/TeamSection";
 import { BlogSection } from "../components/organisms/BlogSection/BlogSection";
 import { Footer } from "../components/organisms/Footer/Footer";
 import dynamic from "next/dynamic";
-
 gsap.registerPlugin(ScrollTrigger);
-
 
 function HomePage() {
     const allSections = useRef();
@@ -21,26 +19,25 @@ function HomePage() {
         
         sections.splice(0, 2);
         sections.pop();
+        
         if (window.innerWidth > 700) {
             sections.forEach(section => {
-                gsap.fromTo(section, { y: "100", opacity: 0, }, {
-                    y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
-                        trigger: section,
-                        start: "top 90%",
-                    }
-                });
+                    gsap.fromTo(section, { y: "100", opacity: 0, }, {
+                        y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
+                            trigger: section,
+                            start: "top 90%",
+                        }
+                    });
             });
         }
     }, []);
-    const HeroAnimation = dynamic(() => import("../components/organisms/HeroAnimation/HeroAnimation"));
-    const DialogAnimation = dynamic(() => import('../components/organisms/DialogAnimationSection/DialogAnimationSection'));
-    
+    const DynamicHeroAnimation = dynamic(() => import('../components/organisms/HeroAnimation/HeroAnimation'))
     return (
         <div ref={ allSections }>
             <SignSection/>
-            <HeroAnimation/>
-            <DialogAnimation/>
-            {/*<GraphSection/>*/}
+            <DynamicHeroAnimation/>
+            <DialogAnimationSection/>
+            <GraphSection/>
             <UseCaseSection/>
             <TeamSection/>
             <BlogSection/>
