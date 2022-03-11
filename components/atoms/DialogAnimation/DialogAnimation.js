@@ -9,7 +9,7 @@ const WrapperAnimation = styled.div`
 `;
 
 
-export const DialogAnimation = () => {
+function DialogAnimation() {
     const defaultOptions = {
         loop: false,
         autoplay: true,
@@ -24,4 +24,6 @@ export const DialogAnimation = () => {
             </WrapperAnimation>
         </>
     );
-};
+}
+
+export default DialogAnimation;

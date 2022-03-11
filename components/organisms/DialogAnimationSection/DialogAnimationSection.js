@@ -3,7 +3,6 @@ import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { ArrowNextStep } from "../../molecules/ArrowNextStep/ArrowNextStep";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
-import { DialogAnimation } from "../../atoms/DialogAnimation/DialogAnimation";
 import { Frame } from "../../atoms/Frame/Frame";
 import { DialogSectionWrapper } from "./DialogAnimationSection.styles";
 import { GridTwoColumns } from "./DialogAnimationSection.styles";
@@ -11,9 +10,12 @@ import { LeftColumn } from "./DialogAnimationSection.styles";
 import { RightColumn } from "./DialogAnimationSection.styles";
 import { gsap } from "gsap";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
+import dynamic from "next/dynamic";
 
 
 const path = "assets/trail-graph.svg";
+
+const DynamicDialogAnimation = dynamic(() => import("../../atoms/DialogAnimation/DialogAnimation"));
 
 export const DialogAnimationSection = () => {
     const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
@@ -55,7 +57,7 @@ export const DialogAnimationSection = () => {
                         <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
                     </LeftColumn>
                     <RightColumn>
-                        { isTriggerDialogAnimation && <DialogAnimation/> }
+                        { isTriggerDialogAnimation && <DynamicDialogAnimation /> }
                     </RightColumn>
                 </GridTwoColumns>
             </DialogSectionWrapper>

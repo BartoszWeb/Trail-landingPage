@@ -34,7 +34,7 @@ export const RightColumn = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 800px) {
     display: none;
   }
 `;

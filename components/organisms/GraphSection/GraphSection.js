@@ -11,7 +11,7 @@ import { gsap } from "gsap";
 import { Frame } from "./GraphSection.styles";
 import dynamic from "next/dynamic";
 
-const GraphAnimation = dynamic(() => import("/components/atoms/GraphAnimation/GraphAnimation"));
+const DyanmicGraphAnimation = dynamic(() => import("/components/atoms/GraphAnimation/GraphAnimation"));
 
 export const GraphSection = () => {
     const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
@@ -41,7 +41,7 @@ export const GraphSection = () => {
                             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
                                 Best selling pages
                             </BoxContainer>
-                            { isTriggerGraphAnimation ? <GraphAnimation/> : <FakeGraph/> }
+                            { isTriggerGraphAnimation ? <DyanmicGraphAnimation/> : <FakeGraph/> }
                         </Frame>
                     </LeftColumn>
                     <RightColumn>

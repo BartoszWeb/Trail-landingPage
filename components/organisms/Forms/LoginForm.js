@@ -30,7 +30,7 @@ export const LoginForm = () => {
                         <Logo/>
                     </StyledLogo>
                 </Link>
-                <StyledParagraph>Sign Up</StyledParagraph>
+                <StyledParagraph>Log in</StyledParagraph>
                 <StyledInput
                     name={ "email" }
                     type={ "text" }
@@ -49,7 +49,7 @@ export const LoginForm = () => {
                     onBlur={ formik.handleBlur }
                 />
                 <Error>{ formik.touched.password && formik.errors.password }</Error>
-                <FormButton type="submit">Sign up</FormButton>
+                <FormButton type="submit">Log in</FormButton>
             </FormContainer>
         );
     }
