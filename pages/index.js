@@ -36,7 +36,6 @@ function HomePage() {
     return (
         <div ref={ allSections }>
             <SignSection/>
-            <HeroAnimation/>
             <DialogAnimationSection/>
             <GraphSection/>
             <UseCaseSection/>
