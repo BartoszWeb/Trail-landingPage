@@ -5,7 +5,12 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head></Head>
+                <Head>
+                    <link rel="shortcut icon" href="/assets/favicon.ico"/>
+                    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+                          rel="stylesheet"/>
+                </Head>
                 <body>
                 <Main/>
                 <NextScript/>

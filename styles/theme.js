@@ -8,8 +8,8 @@ export const theme = {
         accentColor: "rgba(0, 66, 100, 1)",
     },
     font: {
-        thin: 400,
-        regular: 500,
-        bold: 600,
+        thin: 300,
+        regular: 400,
+        bold: 700,
     },
 };

@@ -10,10 +10,6 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Trail - User Activity Analytics Tool</title>
                 <meta name="description" content="Know your customers and boost your sales with Trail"/>
-                <link rel="shortcut icon" href="/assets/favicon.ico"/>
-                <script>
-                    console.log("asdasdsad')
-                </script>
             </Head>
             <MainTemplate>
                 <Component { ...pageProps } />
