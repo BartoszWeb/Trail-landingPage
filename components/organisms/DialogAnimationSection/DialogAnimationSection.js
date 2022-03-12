@@ -12,7 +12,6 @@ import { gsap } from "gsap";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import dynamic from "next/dynamic";
 
-
 const path = "assets/trail-graph.svg";
 
 const DynamicDialogAnimation = dynamic(() => import("../../atoms/DialogAnimation/DialogAnimation"));
