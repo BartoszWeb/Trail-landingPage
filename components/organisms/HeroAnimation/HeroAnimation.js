@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import dynamic from "next/dynamic";
-
+import HeroAnimation from "../../atoms/HeroAnimation/HeroAnimation";
 const AnimationWrapper = styled.section`
   max-width: 1480px;
   margin: 0 auto 4em auto;
@@ -9,12 +8,14 @@ const AnimationWrapper = styled.section`
   }
 `;
 
-const DynamicHeroAnimation = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
 
-export const HeroAnimation = () => {
+
+function HeroAnimationSection() {
     return (
         <AnimationWrapper>
-            <DynamicHeroAnimation/>
+            <HeroAnimation/>
         </AnimationWrapper>
     );
-};
+}
+
+export default HeroAnimationSection;

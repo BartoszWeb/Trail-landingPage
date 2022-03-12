@@ -8,7 +8,7 @@ const nextConfig = {
         mongodb_password: "IE4e4yFN6tm0e2y0",
         mongodb_clusterName: "trailusers",
         mongodb_dataBase: "TrailUsers",
-    }
+    },
 };
 
 module.exports = nextConfig;

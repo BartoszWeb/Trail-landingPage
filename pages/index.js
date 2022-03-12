@@ -1,23 +1,28 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DialogAnimationSection } from "../components/organisms/DialogAnimationSection/DialogAnimationSection";
 import { GraphSection } from "../components/organisms/GraphSection/GraphSection";
 import { SignSection } from "../components/organisms/SignSection/SignSection";
-import { HeroAnimation } from "../components/organisms/HeroAnimation/HeroAnimation";
 import { UseCaseSection } from "../components/organisms/UseCaseSection/UseCaseSection";
 import { TeamSection } from "../components/organisms/TeamSection/TeamSection";
 import { BlogSection } from "../components/organisms/BlogSection/BlogSection";
 import { Footer } from "../components/organisms/Footer/Footer";
+import dynamic from "next/dynamic";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function HomePage() {
+    const [isDesktop, setIsDesktop] = useState();
     const allSections = useRef();
     
     useEffect(() => {
+        if (window.innerWidth > 700) {
+            setIsDesktop(true);
+        }
+    });
+    useEffect(() => {
         const sections = Array.from(allSections.current.children);
-        
         sections.splice(0, 2);
         sections.pop();
         
@@ -33,10 +38,12 @@ function HomePage() {
         }
     }, []);
     
+    const HeroAnimationSection = dynamic(() => import("../components/organisms/HeroAnimation/HeroAnimation"));
+    
     return (
         <div ref={ allSections }>
             <SignSection/>
-            <HeroAnimation/>
+            { isDesktop && <HeroAnimationSection/> }
             <DialogAnimationSection/>
             <GraphSection/>
             <UseCaseSection/>
