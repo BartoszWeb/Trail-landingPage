@@ -9,9 +9,8 @@ import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, FakeGraph
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { gsap } from "gsap";
 import { Frame } from "./GraphSection.styles";
-import dynamic from "next/dynamic";
 
-const DynamicGraphAnimation = dynamic(() => import("/components/atoms/GraphAnimation/GraphAnimation"));
+import GraphAnimation from "../../atoms/GraphAnimation/GraphAnimation";
 
 export const GraphSection = () => {
     const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
@@ -41,7 +40,7 @@ export const GraphSection = () => {
                             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
                                 Best selling pages
                             </BoxContainer>
-                            { isTriggerGraphAnimation ? <DynamicGraphAnimation/> : <FakeGraph/> }
+                            { isTriggerGraphAnimation ? <GraphAnimation/> : <FakeGraph/> }
                         </Frame>
                     </LeftColumn>
                     <RightColumn>
