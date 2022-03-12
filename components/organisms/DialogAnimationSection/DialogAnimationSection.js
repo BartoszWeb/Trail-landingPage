@@ -17,6 +17,8 @@ const path = "assets/trail-graph.svg";
 const DynamicDialogAnimation = dynamic(() => import("../../atoms/DialogAnimation/DialogAnimation"));
 
 export const DialogAnimationSection = () => {
+    const [isDesktop, setIsDesktop] = useState();
+    
     const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
     const dialogAnimationSelector = useRef(null);
     
@@ -31,6 +33,11 @@ export const DialogAnimationSection = () => {
         });
     }, []);
     
+    useEffect(() => {
+        if (window.innerWidth > 800) {
+            setIsDesktop(true);
+        }
+    });
     
     return (
         <>
@@ -56,7 +63,7 @@ export const DialogAnimationSection = () => {
                         <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
                     </LeftColumn>
                     <RightColumn>
-                        { isTriggerDialogAnimation && <DynamicDialogAnimation /> }
+                        { isDesktop && isTriggerDialogAnimation && <DynamicDialogAnimation/> }
                     </RightColumn>
                 </GridTwoColumns>
             </DialogSectionWrapper>
