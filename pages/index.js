@@ -18,7 +18,7 @@ function HomePage() {
     useEffect(() => {
         
         const sections = Array.from(allSections.current.children);
-        sections.splice(0, 3);
+        sections.splice(0, 2);
         sections.pop();
         
         if (window.innerWidth > 800) {

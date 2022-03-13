@@ -40,7 +40,7 @@ export const DialogAnimationSection = () => {
         }
     });
     const propsToAnim = {
-        src: "assets/snapshot.svg",
+        src: "assets/snapshotDialogAnimation.svg",
         alt: "animation",
     };
     

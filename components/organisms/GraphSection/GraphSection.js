@@ -29,7 +29,7 @@ export const GraphSection = () => {
         });
     }, []);
     const propsToGraph = {
-        src: "assets/snapshotGraph.svg",
+        src: "assets/snapshotGraphAnimation.webp",
         alt: "graph-animation",
     };
     return (
