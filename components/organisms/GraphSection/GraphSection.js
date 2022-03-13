@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+
 const graphTrailLogo = "assets/trail-graph.svg";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
@@ -11,6 +12,7 @@ import { gsap } from "gsap";
 import { Frame } from "./GraphSection.styles";
 
 import GraphAnimation from "../../atoms/GraphAnimation/GraphAnimation";
+import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
 
 export const GraphSection = () => {
     const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
@@ -26,7 +28,10 @@ export const GraphSection = () => {
             }
         });
     }, []);
-    
+    const propsToGraph = {
+        src: "assets/snapshotGraph.svg",
+        alt: "graph-animation",
+    };
     return (
         <>
             <GraphSectionWrapper>
@@ -40,7 +45,7 @@ export const GraphSection = () => {
                             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
                                 Best selling pages
                             </BoxContainer>
-                            { isTriggerGraphAnimation ? <GraphAnimation/> : <FakeGraph/> }
+                            { isTriggerGraphAnimation ? <GraphAnimation/> : <ImageComponent props={ propsToGraph }/> }
                         </Frame>
                     </LeftColumn>
                     <RightColumn>

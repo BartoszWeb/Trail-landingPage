@@ -11,6 +11,7 @@ import { RightColumn } from "./DialogAnimationSection.styles";
 import { gsap } from "gsap";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import dynamic from "next/dynamic";
+import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
 
 const path = "assets/trail-graph.svg";
 
@@ -38,6 +39,10 @@ export const DialogAnimationSection = () => {
             setIsDesktop(true);
         }
     });
+    const propsToAnim = {
+        src: "assets/snapshot.svg",
+        alt: "animation",
+    };
     
     return (
         <>
@@ -62,9 +67,14 @@ export const DialogAnimationSection = () => {
                         </Frame>
                         <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
                     </LeftColumn>
+                    { isDesktop &&
                     <RightColumn>
-                        { isDesktop && isTriggerDialogAnimation && <DynamicDialogAnimation/> }
+                        { isTriggerDialogAnimation
+                            ? <DynamicDialogAnimation/>
+                            : <ImageComponent props={ propsToAnim }/>
+                        }
                     </RightColumn>
+                    }
                 </GridTwoColumns>
             </DialogSectionWrapper>
         </>
