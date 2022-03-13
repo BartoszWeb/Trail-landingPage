@@ -7,25 +7,15 @@ import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { TrailSteps } from "../../atoms/TrailSteps/TrailSteps";
 import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, FakeGraph } from "./GraphSection.styles";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
-import { gsap } from "gsap";
 import { Frame } from "./GraphSection.styles";
 
 import GraphAnimation from "../../atoms/GraphAnimation/GraphAnimation";
 
 export const GraphSection = () => {
-    const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
+    const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(true);
     const graphAnimationSelector = useRef(null);
     
-    useEffect(() => {
-        const animation = graphAnimationSelector.current;
-        gsap.fromTo(animation, { opacity: 0, }, {
-            opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
-                trigger: animation,
-                start: "top bottom",
-                onEnter: () => setIsTriggerGraphAnimation(true)
-            }
-        });
-    }, []);
+
     
     return (
         <>

@@ -7,7 +7,7 @@ export const NavContainer = styled.nav`
   top: 0;
   background-color: ${ ({ theme }) => theme.colors.secondaryColor };
   z-index: 10;
-  padding: 1em 0;
+  padding: 0.6em 0;
 
   @media (max-width: 1000px) {
     display: block;

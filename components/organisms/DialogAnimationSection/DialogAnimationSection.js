@@ -8,7 +8,6 @@ import { DialogSectionWrapper } from "./DialogAnimationSection.styles";
 import { GridTwoColumns } from "./DialogAnimationSection.styles";
 import { LeftColumn } from "./DialogAnimationSection.styles";
 import { RightColumn } from "./DialogAnimationSection.styles";
-import { gsap } from "gsap";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import dynamic from "next/dynamic";
 
@@ -19,20 +18,9 @@ const DynamicDialogAnimation = dynamic(() => import("../../atoms/DialogAnimation
 export const DialogAnimationSection = () => {
     const [isDesktop, setIsDesktop] = useState();
     
-    const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
+    const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(true);
     const dialogAnimationSelector = useRef(null);
-    
-    useEffect(() => {
-        const animation = dialogAnimationSelector.current;
-        gsap.fromTo(animation, { opacity: 0, }, {
-            opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
-                trigger: animation,
-                start: "top bottom",
-                onEnter: () => setIsTriggerDialogAnimation(true)
-            }
-        });
-    }, []);
-    
+
     useEffect(() => {
         if (window.innerWidth > 800) {
             setIsDesktop(true);
