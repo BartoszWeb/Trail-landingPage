@@ -9,6 +9,7 @@
     url('/fonts/lato-v22-latin-300.woff') format('woff'), /* Modern Browsers */
     url('/fonts/lato-v22-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/lato-v22-latin-300.svg#Lato') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* lato-300italic - latin */
 @font-face {
@@ -22,6 +23,7 @@
     url('/fonts/lato-v22-latin-300italic.woff') format('woff'), /* Modern Browsers */
     url('/fonts/lato-v22-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/lato-v22-latin-300italic.svg#Lato') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* lato-regular - latin */
 @font-face {
@@ -35,6 +37,7 @@
     url('/fonts/lato-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
     url('/fonts/lato-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/lato-v22-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* lato-italic - latin */
 @font-face {
@@ -48,6 +51,7 @@
     url('/fonts/lato-v22-latin-italic.woff') format('woff'), /* Modern Browsers */
     url('/fonts/lato-v22-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/lato-v22-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* lato-700 - latin */
 @font-face {
@@ -61,6 +65,7 @@
     url('/fonts/lato-v22-latin-700.woff') format('woff'), /* Modern Browsers */
     url('/fonts/lato-v22-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/lato-v22-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* lato-700italic - latin */
 @font-face {
@@ -74,4 +79,5 @@
     url('/fonts/lato-v22-latin-700italic.woff') format('woff'), /* Modern Browsers */
     url('/fonts/lato-v22-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
     url('/fonts/lato-v22-latin-700italic.svg#Lato') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }

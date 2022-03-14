@@ -11,8 +11,6 @@ export default class MyDocument extends Document {
                           crossOrigin=""/>
                     <link rel="preload" href="/fonts/lato-v22-latin-300.woff2" as="font" type="font/woff2"
                           crossOrigin=""/>
-                    <link rel="preload" href="/fonts/lato-v22-latin-regular.ttf" as="font" type="font/woff2"
-                          crossOrigin=""/>
                     <link href="/fonts/style.css" rel="stylesheet"/>
                 </Head>
                 <body>
