@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
                 <Head>
                     <link rel="shortcut icon" href="/assets/favicon.ico"/>
                     <link rel="preload" href="/fonts/lato-v22-latin-regular.woff2" as="font" type="font/woff2" crossOrigin=""/>
-                    <link rel="preload" href="/fonts/lato-v22-latin-regular.woff2" as="font" type="font/woff2" crossOrigin=""/>
+                    <link rel="preload" href="/fonts/lato-v22-latin-300.woff2" as="font" type="font/woff2" crossOrigin=""/>
                 </Head>
                 <body>
                 <Main/>
