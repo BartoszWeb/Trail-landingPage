@@ -24,14 +24,16 @@ export const DialogAnimationSection = () => {
     const dialogAnimationSelector = useRef(null);
     
     useEffect(() => {
-        const animation = dialogAnimationSelector.current;
-        gsap.fromTo(animation, { opacity: 0, }, {
-            opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
-                trigger: animation,
-                start: "top bottom",
-                onEnter: () => setIsTriggerDialogAnimation(true)
-            }
-        });
+        if (window.innerWidth > 800) {
+            const animation = dialogAnimationSelector.current;
+            gsap.fromTo(animation, { opacity: 0, }, {
+                opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
+                    trigger: animation,
+                    start: "top bottom",
+                    onEnter: () => setIsTriggerDialogAnimation(true)
+                }
+            });
+        }
     }, []);
     
     useEffect(() => {
@@ -39,6 +41,7 @@ export const DialogAnimationSection = () => {
             setIsDesktop(true);
         }
     });
+    
     const propsToAnim = {
         src: "assets/snapshotDialogAnimation.svg",
         alt: "animation",
