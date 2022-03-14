@@ -22,7 +22,6 @@ function HomePage() {
             const sections = Array.from(allSections.current.children);
             sections.splice(0, 2);
             sections.pop();
-            
             sections.forEach(section => {
                 gsap.fromTo(section, { y: "100", opacity: 0, }, {
                     y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
