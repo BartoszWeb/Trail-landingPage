@@ -7,23 +7,9 @@ export default class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <link rel="shortcut icon" href="/assets/favicon.ico"/>
-                    {/*<link rel="preconnect" href="https://fonts.googleapis.com"/>*/}
-                    {/*<link rel="preload"*/}
-                    {/*      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"/>*/}
-                    {/*<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"*/}
-                    {/*      rel="stylesheet" as="style"/>*/}
-                    <link
-                        rel="preload"
-                        href="/fonts/Lato.woff2"
-                        as="font"
-                        crossOrigin=""
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/Lato.woff2"
-                        as="font"
-                        crossOrigin=""
-                    />
+                    <link rel="preload" href="/fonts/lato-v22-latin-regular.woff2" as="font" type="font/woff2" crossOrigin=""/>
+                    <link rel="preload" href="/fonts/lato-v22-latin-300.woff2" as="font" type="font/woff2" crossOrigin=""/>
+                    2
                 </Head>
                 <body>
                 <Main/>
