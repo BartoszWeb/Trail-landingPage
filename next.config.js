@@ -9,7 +9,6 @@ const nextConfig = {
         mongodb_clusterName: "trailusers",
         mongodb_dataBase: "TrailUsers",
     },
-    optimizeFonts: false,
 };
 
 module.exports = nextConfig;
