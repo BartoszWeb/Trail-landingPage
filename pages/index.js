@@ -1,4 +1,4 @@
-import { useRef, useEffect} from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { DialogAnimationSection } from "../components/organisms/DialogAnimationSection/DialogAnimationSection";
@@ -14,14 +14,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 function HomePage() {
     const allSections = useRef();
-
+    
     useEffect(() => {
-        
-        const sections = Array.from(allSections.current.children);
-        sections.splice(0, 2);
-        sections.pop();
+        if (window.innerHeight < 800) return;
         
         if (window.innerWidth > 800) {
+            const sections = Array.from(allSections.current.children);
+            sections.splice(0, 2);
+            sections.pop();
+            
             sections.forEach(section => {
                 gsap.fromTo(section, { y: "100", opacity: 0, }, {
                     y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
