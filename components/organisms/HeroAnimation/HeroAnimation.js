@@ -15,9 +15,6 @@ const AnimationWrapper = styled.section`
   @media (max-width: 1200px) {
     height: 350px;
   }
-  @media (max-width: 1000px) {
-    height: auto;
-  }
 `;
 
 const DynamicHeroAnimation = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
