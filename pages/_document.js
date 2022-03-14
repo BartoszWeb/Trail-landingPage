@@ -8,9 +8,10 @@ export default class MyDocument extends Document {
                 <Head>
                     <link rel="shortcut icon" href="/assets/favicon.ico"/>
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                    <link rel="preload"
+                          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"/>
                     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-                          rel="stylesheet"/>
+                          rel="stylesheet" as="style"/>
                 </Head>
                 <body>
                 <Main/>
