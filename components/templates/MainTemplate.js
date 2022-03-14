@@ -20,7 +20,6 @@ export const MainTemplate = ({ children }) => {
                     <Notification title={ activeNotification.title } message={ activeNotification.message }
                                   status={ activeNotification.status }/>)
             }
-        
         </>
     );
 };

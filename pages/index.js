@@ -43,7 +43,9 @@ function HomePage() {
             <TeamSection/>
             <BlogSection/>
             <Footer/>
+            
         </div>
+        
     );
 }
 

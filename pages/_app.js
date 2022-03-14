@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps }) {
                 <Component { ...pageProps } />
             </MainTemplate>
         </AppContexts>
-    
     );
     
 }
+
 
 export default MyApp;
