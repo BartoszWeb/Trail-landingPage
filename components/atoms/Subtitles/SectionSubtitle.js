@@ -7,6 +7,7 @@ export const SectionSubtitle = styled.h2`
   text-align: ${ ({ textAlign = "left" }) => textAlign };
   position: relative;
   z-index: 0;
+  font-style: italic;
 
   ::after {
     content: '';
