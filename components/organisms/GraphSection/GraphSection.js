@@ -1,18 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
-
-const graphTrailLogo = "assets/trail-graph.svg";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { TrailSteps } from "../../atoms/TrailSteps/TrailSteps";
-import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn, FakeGraph } from "./GraphSection.styles";
+import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn} from "./GraphSection.styles";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { gsap } from "gsap";
 import { Frame } from "./GraphSection.styles";
 
 import GraphAnimation from "../../atoms/GraphAnimation/GraphAnimation";
 import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
+
+const propsToGraph = {
+    src: "assets/snapshotGraphAnimation.webp",
+    alt: "graph-animation",
+};
+const graphTrailLogo = "assets/trail-graph.svg";
 
 export const GraphSection = () => {
     const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
@@ -28,10 +32,7 @@ export const GraphSection = () => {
             }
         });
     }, []);
-    const propsToGraph = {
-        src: "assets/snapshotGraphAnimation.webp",
-        alt: "graph-animation",
-    };
+
     return (
         <>
             <GraphSectionWrapper>

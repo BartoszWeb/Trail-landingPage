@@ -53,13 +53,6 @@ export const StyledTrailSteps = styled.div`
     width: 200px;
   }
 `;
-export const FakeGraph = styled.div`
-  width: 100%;
-  height: 574px;
-  @media (max-width: 700px) {
-    height: 400px;
-  }
-`;
 
 export const Frame = styled.div`
   display: flex;
