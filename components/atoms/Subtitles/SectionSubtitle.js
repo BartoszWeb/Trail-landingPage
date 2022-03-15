@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const SectionSubtitle = styled.h2`
-  font-weight: 700;
+  font-weight: ${ ({ theme = "regular" }) => theme.font.regular };
   margin: 0 1.5em 1em 1.5em;
   font-size: 1.3rem;
   text-align: ${ ({ textAlign = "left" }) => textAlign };
   position: relative;
   z-index: 0;
-  font-style: italic;
 
   ::after {
     content: '';
