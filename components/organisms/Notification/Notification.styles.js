@@ -16,7 +16,7 @@ export const NotificationContainer = styled.div`
   box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
 
   h2 {
-    color: black;
+    color: ${ ({ theme }) => theme.colors.textColor };
   }
 
   &.pending {
@@ -28,6 +28,6 @@ export const NotificationContainer = styled.div`
   }
 
   &.error {
-    background-color: #fb3939;
+    background-color: #ff6262;
   }
 `;
