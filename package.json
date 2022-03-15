@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "critters": "^0.0.16",
     "formik": "^2.2.9",
     "gsap": "^3.9.1",
     "mongodb": "^4.4.1",
