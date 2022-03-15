@@ -38,9 +38,9 @@ function HomePage() {
             <SignSection/>
             <HeroAnimation/>
             <DialogAnimationSection/>
-            {/*<GraphSection/>*/}
-            <UseCaseSection/>
-            <TeamSection/>
+            <GraphSection/>
+            {/*<UseCaseSection/>*/}
+            {/*<TeamSection/>*/}
             <BlogSection/>
             <Footer/>
         </div>
