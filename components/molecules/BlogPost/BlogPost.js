@@ -1,12 +1,13 @@
 import { AvatarImg } from "../../atoms/Avatar/AvatarImg";
 import { Time } from "../../atoms/Time/Time";
-import { Wrapper, StyledTitle, StyledPost, AvatarWrapper, AuthorInfo } from "./BlogPost.styles";
+import { WrapperLink, StyledTitle, StyledPost, AvatarWrapper, AuthorInfo, StyledLink } from "./BlogPost.styles";
+import Link from "next/link";
 
 const path = "assets/avatarBDBackgroundGray.png";
 
-export const BlogPost = ({ time, title, post }) => {
+export const BlogPost = ({ time, title, post, url }) => {
     return (
-        <Wrapper>
+        <WrapperLink href="/">
             <AuthorInfo>
                 <AvatarWrapper>
                     <AvatarImg path={ path }/>
@@ -15,7 +16,10 @@ export const BlogPost = ({ time, title, post }) => {
             </AuthorInfo>
             <StyledTitle>{ title }</StyledTitle>
             <StyledPost>{ post }</StyledPost>
-        </Wrapper>
+            <Link passHref href={ url }>
+                <StyledLink>Read article...</StyledLink>
+            </Link>
+        </WrapperLink>
     );
 };
 

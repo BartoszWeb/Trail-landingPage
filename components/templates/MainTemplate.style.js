@@ -4,7 +4,7 @@ export const Content = styled.main`
   width: 100%;
   margin: 2em auto 0 auto;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     margin-top: 5em;
   }
 

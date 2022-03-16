@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import Link from "next/link";
-import { MenuNav } from "./ModalMenu.styles";
+import { List, MenuNav, StyledButtonDemo, UlList } from "./ModalMenu.styles";
 import { ListItem } from "./ModalMenu.styles";
 import { StyledButton } from "./ModalMenu.styles";
 import { StyledButtonSignUp } from "./ModalMenu.styles";
@@ -22,7 +22,12 @@ export const ModalMenu = () => {
     
     return (
         <MenuNav ref={ nav }>
-            <ul>
+            <List>
+                <ListItem>
+                    <Link passHref id="link" href="/demo">
+                        <StyledButtonDemo onClick={ closeMobileMenu }>Demo App</StyledButtonDemo>
+                    </Link>
+                </ListItem>
                 <ListItem>
                     <Link passHref id="link" href="/">
                         <StyledButton onClick={ closeMobileMenu }>Home</StyledButton>
@@ -53,7 +58,8 @@ export const ModalMenu = () => {
                         <StyledButton onClick={ closeMobileMenu }>Contact</StyledButton>
                     </Link>
                 </ListItem>
-                <ListItem style={ { marginTop: "50px" } }>
+          
+                <ListItem>
                     <Link passHref href="/signup">
                         <StyledButtonSignUp onClick={ closeMobileMenu }>Sign up free</StyledButtonSignUp>
                     </Link>
@@ -63,7 +69,7 @@ export const ModalMenu = () => {
                         <StyledButtonLogin onClick={ closeMobileMenu }>Login</StyledButtonLogin>
                     </Link>
                 </ListItem>
-            </ul>
+            </List>
         </MenuNav>
     );
 };

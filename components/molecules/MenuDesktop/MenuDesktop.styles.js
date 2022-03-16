@@ -13,7 +13,10 @@ export const StyledLogo = styled.a`
   margin-top: -5px;
 `;
 export const StyledLink = styled.a`
-  padding: 10px;
+  padding: 0.5em;
+  @media (max-width: 1200px) {
+    padding: 0.2em;
+  }
 `;
 export const ListItem = styled.li`
   margin: 0 0.25em;

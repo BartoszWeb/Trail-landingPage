@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 
-export const Wrapper = styled.div`
+export const WrapperLink = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -11,9 +11,10 @@ export const Wrapper = styled.div`
   font-weight: ${ ({ fontWeight }) => fontWeight };
   background-color: ${ ({ theme }) => theme.colors.tertiaryColor };
   margin: 0.2em 0;
-  padding: 3.5em;
+  padding: 3.5em 2em 2em 2em;
   border-radius: 5px;
   position: relative;
+
   @media (max-width: 500px) {
     padding: 2.5em;
   }
@@ -42,4 +43,15 @@ export const AuthorInfo = styled.div`
   width: 100%;
   justify-content: flex-end;
   margin-bottom: 1.5em;
+`;
+
+
+export const StyledLink = styled.a`
+  margin: 2em auto 0 auto;
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
+  background-color: ${ ({ theme }) => theme.colors.primaryColor };
+  :hover{
+    background-color: #ffea58;
+  }
 `;

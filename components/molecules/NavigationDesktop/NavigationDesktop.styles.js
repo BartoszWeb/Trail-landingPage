@@ -6,7 +6,7 @@ export const NavWrapper = styled.nav`
   margin: 1em auto;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     display: none;
   }
 `;

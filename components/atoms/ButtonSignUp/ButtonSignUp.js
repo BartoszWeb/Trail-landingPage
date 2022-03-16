@@ -8,6 +8,9 @@ export const ButtonSignUp = styled.a`
   border: none;
   cursor: pointer;
   text-align: center;
+  
+ 
+  
   &:hover {
     background-color: #ffea58;
   }

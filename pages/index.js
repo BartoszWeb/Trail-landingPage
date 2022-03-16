@@ -38,13 +38,12 @@ function HomePage() {
             <SignSection/>
             <HeroAnimation/>
             <DialogAnimationSection/>
-            {/*<GraphSection/>*/}
+            <GraphSection/>
             <UseCaseSection/>
             <TeamSection/>
             <BlogSection/>
             <Footer/>
         </div>
-        
     );
 }
 
