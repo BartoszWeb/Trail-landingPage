@@ -2,37 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
-import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { TrailSteps } from "../../atoms/TrailSteps/TrailSteps";
-import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn} from "./GraphSection.styles";
-import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
-import { gsap } from "gsap";
-import { Frame } from "./GraphSection.styles";
+import { GraphSectionWrapper, GridTwoColumns, LeftColumn, RightColumn } from "./GraphSection.styles";
+import { FrameGraphSection } from "../../molecules/FrameGraphSection/FrameGrahSection";
 
-import GraphAnimation from "../../atoms/GraphAnimation/GraphAnimation";
-import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
-
-const propsToGraph = {
-    src: "assets/snapshotGraphAnimation.webp",
-    alt: "graph-animation",
-};
-const graphTrailLogo = "assets/trail-graph.svg";
 
 export const GraphSection = () => {
-    const [isTriggerGraphAnimation, setIsTriggerGraphAnimation] = useState(false);
     const graphAnimationSelector = useRef(null);
-    
-    useEffect(() => {
-        const animation = graphAnimationSelector.current;
-        gsap.fromTo(animation, { opacity: 0, }, {
-            opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
-                trigger: animation,
-                start: "top bottom",
-                onEnter: () => setIsTriggerGraphAnimation(true)
-            }
-        });
-    }, []);
-
     return (
         <>
             <GraphSectionWrapper>
@@ -41,13 +17,7 @@ export const GraphSection = () => {
                 </SectionSubtitle>
                 <GridTwoColumns>
                     <LeftColumn ref={ graphAnimationSelector } className="lottie-GraphAnimation">
-                        <Frame width={ "90%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
-                            <LogoGraph/>
-                            <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>
-                                Best selling pages
-                            </BoxContainer>
-                            { isTriggerGraphAnimation ? <GraphAnimation/> : <ImageComponent props={ propsToGraph }/> }
-                        </Frame>
+                        <FrameGraphSection graphAnimationSelector={ graphAnimationSelector }/>
                     </LeftColumn>
                     <RightColumn>
                         <ParagraphHtml

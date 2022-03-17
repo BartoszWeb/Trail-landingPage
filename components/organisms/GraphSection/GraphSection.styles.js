@@ -53,39 +53,3 @@ export const StyledTrailSteps = styled.div`
     width: 200px;
   }
 `;
-
-export const Frame = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  position: relative;
-  width: 100%;
-  margin: ${ ({ margin }) => margin };
-  padding: ${ ({ padding }) => padding };
-
-
-  @media (max-width: 300px) {
-    padding: 10px;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  ::before {
-    content: '';
-    background-color: ${ ({ theme }) => theme.colors.secondaryColor };
-    display: block;
-    position: absolute;
-    top: -33px;
-    left: 10px;
-    width: 100px;
-    height: 60px;
-  }
-
-
-  @media (max-width: 1000px) {
-    padding: 1em;
-    width: 90%;
-    margin: 0 auto;
-  }
-`;

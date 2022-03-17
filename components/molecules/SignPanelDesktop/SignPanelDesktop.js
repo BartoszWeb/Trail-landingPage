@@ -21,12 +21,12 @@ export const SignPanelDesktop = () => {
             </li>
             <li>
                 <Link href={ "/login" } passHref>
-                    <ButtonLogin>Login</ButtonLogin>
+                    <ButtonLogin>Log In</ButtonLogin>
                 </Link>
             </li>
             <li>
                 <Link href={ "/signup" } passHref>
-                    <ButtonSignUp>Sing up</ButtonSignUp>
+                    <ButtonSignUp>Sing Up</ButtonSignUp>
                 </Link>
             </li>
         </SignPanelWrapper>

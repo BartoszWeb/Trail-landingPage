@@ -4,8 +4,11 @@ import styled from "styled-components";
 
 
 const WrapperAnimation = styled.div`
-  margin: -5em auto 0 auto;
+  margin: -2em auto 0 auto;
   width: 100%;
+  position: absolute;
+  top: 0;
+  max-height: 100%;
 `;
 
 

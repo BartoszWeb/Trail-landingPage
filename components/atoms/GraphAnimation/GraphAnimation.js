@@ -10,7 +10,7 @@ const WrapperAnimation = styled.div`
 `;
 
 
-function GraphAnimation() {
+export const GraphAnimation = () => {
     const defaultOptions = {
         loop: false,
         autoplay: true,
@@ -24,6 +24,4 @@ function GraphAnimation() {
             </WrapperAnimation>
         </>
     );
-}
-
-export default GraphAnimation;
+};

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import Link from "next/link";
-import { List, MenuNav, StyledButtonDemo, UlList } from "./ModalMenu.styles";
+import { List, MenuNav, StyledButtonDemo} from "./ModalMenu.styles";
 import { ListItem } from "./ModalMenu.styles";
 import { StyledButton } from "./ModalMenu.styles";
 import { StyledButtonSignUp } from "./ModalMenu.styles";
@@ -58,15 +58,14 @@ export const ModalMenu = () => {
                         <StyledButton onClick={ closeMobileMenu }>Contact</StyledButton>
                     </Link>
                 </ListItem>
-          
                 <ListItem>
                     <Link passHref href="/signup">
-                        <StyledButtonSignUp onClick={ closeMobileMenu }>Sign up free</StyledButtonSignUp>
+                        <StyledButtonSignUp onClick={ closeMobileMenu }>Sign Up</StyledButtonSignUp>
                     </Link>
                 </ListItem>
-                <ListItem>
+                <ListItem margin="0.5em 0.3em 0 0.3em">
                     <Link passHref href="/login">
-                        <StyledButtonLogin onClick={ closeMobileMenu }>Login</StyledButtonLogin>
+                        <StyledButtonLogin onClick={ closeMobileMenu }>Log In</StyledButtonLogin>
                     </Link>
                 </ListItem>
             </List>

@@ -6,9 +6,9 @@ export const ButtonLogin = styled.a`
   padding: 1em 2em;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 
 
   &:hover {
-    background-color: white;
-    color: #ffde00;
+    background-color: #fbfbfb;
 `;

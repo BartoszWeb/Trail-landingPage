@@ -4,9 +4,11 @@ import animationData from "./HeroAnimationData";
 import styled from "styled-components";
 
 const WrapperAnimation = styled.div`
-  width: auto;
+  width: 100%;
   margin: 0 auto;
-
+  position: absolute;
+  top: 0;
+  max-height: 100%;
 `;
 
 function HeroAnim() {

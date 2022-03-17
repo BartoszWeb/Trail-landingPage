@@ -27,14 +27,13 @@ export const MenuNav = styled.nav`
 
 export const ListItem = styled.li`
   display: block;
-  margin: 0 10px;
+  margin: ${ ({ margin = "0 0.3em" }) => margin };
   list-style: none;
   text-align: center;
 `;
 
 export const List = styled.ul`
-  
-  @media screen and (orientation: landscape)  {
+  @media screen and (max-width: 800px) and (orientation: landscape) {
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -54,11 +53,12 @@ export const StyledButton = styled.button`
   color: ${ ({ theme }) => theme.colors.textColor };
   background-color: ${ ({ theme }) => theme.colors.secondaryColor };
   border: none;
-  
-  @media screen and (orientation: landscape)  {
+
+  @media screen and (orientation: landscape) {
     padding: 10px;
     width: 150px;
   }
+
   :hover {
     background-color: ${ ({ theme }) => theme.colors.primaryColor };
     border-radius: 5px;
@@ -71,8 +71,8 @@ export const StyledButtonSignUp = styled(ButtonSignUp)`
   width: 200px;
   padding: 1em;
   font-size: 1.1rem;
-  
-  @media screen and (orientation: landscape)  {
+
+  @media screen and (orientation: landscape) {
     padding: 10px;
     width: 150px;
 
@@ -85,8 +85,8 @@ export const StyledButtonLogin = styled(ButtonLogin)`
   width: 200px;
   padding: 1em;
   font-size: 1.1rem;
-  
-  @media screen and (orientation: landscape)  {
+
+  @media screen and (orientation: landscape) {
     padding: 10px;
     width: 150px;
 
@@ -99,11 +99,11 @@ export const StyledButtonDemo = styled(ButtonDemo)`
   width: 200px;
   padding: 1em;
   font-size: 1.1rem;
-  
-  @media screen and (orientation: landscape)  {
+
+  @media screen and (orientation: landscape) {
     width: 150px;
     padding: 10px;
     margin: 0;
- 
+
   }
 `;

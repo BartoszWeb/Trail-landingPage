@@ -1,37 +1,22 @@
 import styled from "styled-components";
-import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
 
-export const UseCaseSectionWrapper = styled.section`
-  max-width: 1280px;
-  margin: 7em auto 3em auto;
-  display: grid;
-  
-  @media (max-width: 600px) {
-    margin: 3.5em auto 3em auto;
-    padding-top: 25px;
-  }
-  @media (max-width: 500px) {
-    overflow-x: hidden;
-  }
-`;
-
-export const StyledButton = styled(ButtonSignUp)`
-  margin: 0 auto;
-  z-index: 1;
+export const WrapperSVG = styled.div`
+  position: relative;
+  height: 0;
+  padding: 3% 5% 67.5% 5%;
+  margin: -4em 0 -3em 0;
+  overflow: hidden;
 
   @media (max-width: 800px) {
-    margin-top: 1em;
-  }
-
-  @media (max-width: 380px) {
-    margin-top: 2.5em;
+    margin: -2em 0 -1em 0;
   }
 `;
-export const IframeSvgFake = styled.img`
+
+export const IframeSVG = styled.iframe`
   background: url(${ "/assets/laptop-canvas.svg" }) center center no-repeat;
   box-sizing: border-box;
   background-size: contain;
-  padding: 13.2% 17.6% 14.4% 16.6%;
+  padding: 13.2% 17.5% 14.4% 16.4%;
   position: absolute;
   top: 0;
   left: 0;

@@ -32,6 +32,9 @@ export const LeftColumn = styled.div`
 
 export const RightColumn = styled.div`
   display: flex;
+  width: 100%;
+  position: relative;
+  padding-top: calc(600 / 550 * 100%);
   justify-content: center;
 
   @media (max-width: 1100px) {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Frame = styled.div`
+export const FrameDialog = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
