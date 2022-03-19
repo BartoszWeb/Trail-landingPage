@@ -57,25 +57,18 @@ const transform = (width) => keyframes`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 0.8fr 1fr;
-  visibility: visible;
 `;
 
 const ParagraphHtml = styled.p`
-  visibility: visible;
-  display: -webkit-box;
+  max-width: 100%;
+  height: calc(1rem * 1 * 2);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  /* autoprefixer: ignore next */
   -webkit-box-orient: vertical;
 
-  @media (max-width: 500px) {
-    font-size: 0.8rem;
-  }
-  @media (max-width: 350px) {
-    font-size: 0.6rem;
-  }
+
 `;
 export const CssGraphAnimation = () => {
     return (
