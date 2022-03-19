@@ -4,7 +4,7 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   margin-top: 6em;
   background-color: black;
-`
+`;
 export const ContentWrapper = styled.div`
   max-width: 1000px;
   display: grid;
@@ -13,16 +13,18 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   justify-items: center;
   padding: 6em 4em 2.5em 4em;
+
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
+    padding: 3em 4em 2.5em 4em;
   }
-`
+`;
 
 export const SingleItem = styled.div`
   @media (max-width: 700px) {
     margin-bottom: 1.5em;
   }
-`
+`;
 export const TermsWrapper = styled.div`
   max-width: 1000px;
   display: flex;
@@ -30,7 +32,7 @@ export const TermsWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-`
+`;
 
 export const StyledLogo = styled.button`
   width: 160px;
@@ -38,10 +40,10 @@ export const StyledLogo = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-`
+`;
 export const WrapperParagraph = styled.div`
   width: 10em;
-`
+`;
 export const Column = styled.ul`
   display: flex;
   flex-direction: column;
@@ -57,7 +59,7 @@ export const Line = styled.div`
   justify-items: center;
   height: 1px;
   background-color: white;
-`
+`;
 export const TermsUl = styled.ul`
   width: 95%;
   display: flex;
@@ -70,4 +72,4 @@ export const TermsUl = styled.ul`
     flex-direction: column;
     justify-content: center;
   }
-`
+`;

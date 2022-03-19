@@ -60,7 +60,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const ParagraphHtml = styled.p`
+const Paragraph = styled.p`
   max-width: 100%;
   font-size: 0.9rem;
   height: calc(0.9rem * 1 * 2);
@@ -72,43 +72,43 @@ const ParagraphHtml = styled.p`
   -webkit-box-orient: vertical;
 `;
 
-export const CssGraphAnimation = () => {
+export const GraphAnimation = () => {
     return (
         <GraphWrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/contact</ParagraphHtml>
+                <Paragraph>www.trail.com/contact</Paragraph>
                 <Bar width={ "10%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/how-to-install-trail-on-the-website</ParagraphHtml>
+                <Paragraph>www.trail.com/how-to-install-trail-on-the-website</Paragraph>
                 <Bar width={ "20%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/blog</ParagraphHtml>
+                <Paragraph>www.trail.com/blog</Paragraph>
                 <Bar width={ "30%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/demo-app</ParagraphHtml>
+                <Paragraph>www.trail.com/demo-app</Paragraph>
                 <Bar width={ "40%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/why-do-you-need-to-know-the-customers</ParagraphHtml>
+                <Paragraph>www.trail.com/why-do-you-need-to-know-the-customers</Paragraph>
                 <Bar width={ "50%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/customers-reviews</ParagraphHtml>
+                <Paragraph>www.trail.com/customers-reviews</Paragraph>
                 <Bar width={ "60%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/case-studies-how-trail-boosted-sales</ParagraphHtml>
+                <Paragraph>www.trail.com/case-studies-how-trail-boosted-sales</Paragraph>
                 <Bar width={ "70%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/3-ways-to-expose-most-important-contents</ParagraphHtml>
+                <Paragraph>www.trail.com/3-ways-to-expose-most-important-contents</Paragraph>
                 <Bar width={ "80%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/how-to-improve-the-best-pages-and-get-more-customers</ParagraphHtml>
+                <Paragraph>www.trail.com/how-to-improve-the-best-pages-and-get-more-customers</Paragraph>
                 <Bar width={ "90%" }/>
             </Wrapper>
         </GraphWrapper>

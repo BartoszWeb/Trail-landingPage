@@ -6,7 +6,7 @@ export const GraphSectionWrapper = styled.section`
 `;
 export const GridTwoColumns = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   margin-top: 5em;
 
   @media (max-width: 1000px) {
