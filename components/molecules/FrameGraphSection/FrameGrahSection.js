@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { FrameGraph } from "../../atoms/Frame/FrameGraph";
-import { GraphAnimation } from "../../atoms/CssGraphAnimation/GraphAnimation";
-import { SkeletonGraph } from "../../atoms/CssGraphAnimation/SkeletonGraph";
+import { GraphAnimation } from "../../atoms/GraphAnimation/GraphAnimation";
+import { SkeletonGraph } from "../../atoms/GraphAnimation/SkeletonGraph";
 const graphTrailLogo = "assets/trail-graph.svg";
 
 export const FrameGraphSection = ({ graphAnimationSelector }) => {
