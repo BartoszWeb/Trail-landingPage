@@ -14,7 +14,16 @@ export const BlogSection = () => {
                 <SectionSubtitle>Have a look at our blog posts</SectionSubtitle>
                 <GridPosts>
                     <BlogPost
-                        time="19.09.2021"
+                        time="19.09.2022"
+                        title="Case studies how the Trail boosted sales."
+                        post="Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s,"
+                        url="/"
+                    />
+                    
+                    <BlogPost
+                        time="19.09.2022"
                         title="How to boost sales with trail?"
                         post="Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -23,16 +32,7 @@ export const BlogSection = () => {
                     />
                     
                     <BlogPost
-                        time="19.09.2021"
-                        title="How to boost sales with trail?"
-                        post="Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                        1500s,"
-                        url="/"
-                    />
-                    
-                    <BlogPost
-                        time="19.09.2021"
+                        time="19.09.2022"
                         title="Why do you need to know the customer's sales trail?"
                         post="Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -41,7 +41,7 @@ export const BlogSection = () => {
                     />
                     
                     <BlogPost
-                        time="19.09.2021"
+                        time="19.09.2022"
                         title="How to improve the best pages and get more customers?"
                         post="Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the

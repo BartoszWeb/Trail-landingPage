@@ -27,7 +27,7 @@ export const FrameGraphSection = ({ graphAnimationSelector }) => {
         <FrameGraph width={ "100%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
             <LogoGraph/>
             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>Best selling pages</BoxContainer>
-            { isTriggerGraphAnimation ? <GraphAnimation/> : <SkeletonGraph/> }
+            {isTriggerGraphAnimation ? <GraphAnimation/> : <SkeletonGraph/> }
         </FrameGraph>
     );
 };

@@ -22,7 +22,8 @@ const SkeletonWrapper = styled.div`
 
 const SkeletonParagraph = styled.p`
   max-width: 100%;
-  height: calc(1rem * 1 * 2);
+  font-size: 0.8rem;
+  height: calc(0.8rem * 1 * 2);
   overflow: hidden;
   word-break: break-all;
   text-overflow: ellipsis;
