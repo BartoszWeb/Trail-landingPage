@@ -57,7 +57,7 @@ export const Navigation = () => {
                     <ListWrapper>
                         <ListItem>
                             <Link passHref href="/">
-                                <StyledLogo>
+                                <StyledLogo onClick={ closeMobileMenu }>
                                     <Logo/>
                                 </StyledLogo>
                             </Link>

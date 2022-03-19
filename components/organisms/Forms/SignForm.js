@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useFormik } from "formik";
 import { Validate } from "./FormValidation";
-import { Error } from "./Form.styles";
+import { Error, FormLabel, InputWrapper } from "./Form.styles";
 import { FormContainer, StyledLogo, StyledParagraph, StyledInput, FormButton } from "./Form.styles";
 import { Logo } from "../../atoms/Logo/Logo";
 import { useContext } from "react";
@@ -17,7 +17,6 @@ function SignForm() {
     const notificationContext = useContext(NotificationContext);
     
     const onSubmit = (values) => {
-        
         notificationContext.showNotification({
             title: "Signing up...",
             message: "Registering...",
@@ -39,7 +38,7 @@ function SignForm() {
                     status: "error"
                 });
             });
-
+        
     };
     
     const formik = useFormik({
@@ -56,24 +55,33 @@ function SignForm() {
                 </StyledLogo>
             </Link>
             <StyledParagraph>Sign Up</StyledParagraph>
-            <StyledInput
-                name={ "email" }
-                type={ "text" }
-                placeholder={ "Business email" }
-                onChange={ formik.handleChange }
-                value={ formik.values.email }
-                onBlur={ formik.handleBlur }
-            />
-            <Error>{ formik.touched.email && formik.errors.email }</Error>
-            <StyledInput
-                name={ "password" }
-                type={ "password" }
-                placeholder={ "Password" }
-                onChange={ formik.handleChange }
-                value={ formik.values.password }
-                onBlur={ formik.handleBlur }
-            />
-            <Error>{ formik.touched.password && formik.errors.password }</Error>
+            <InputWrapper>
+                <StyledInput
+                    id="email"
+                    name={ "email" }
+                    type={ "text" }
+                    onChange={ formik.handleChange }
+                    value={ formik.values.email }
+                    onBlur={ formik.handleBlur }
+                    required
+                />
+                <FormLabel className="label" htmlFor="email">Business email</FormLabel>
+                <Error>{ formik.touched.email && formik.errors.email }</Error>
+            </InputWrapper>
+            
+            <InputWrapper>
+                <StyledInput
+                    name={ "password" }
+                    type={ "password" }
+                    onChange={ formik.handleChange }
+                    value={ formik.values.password }
+                    onBlur={ formik.handleBlur }
+                    required
+                />
+                <FormLabel htmlFor="email">Password</FormLabel>
+                <Error>{ formik.touched.password && formik.errors.password }</Error>
+            </InputWrapper>
+            
             <FormButton type="submit">Sign up</FormButton>
         </FormContainer>
     );

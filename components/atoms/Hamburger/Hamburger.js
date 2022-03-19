@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { HamburgerButton } from "./Hamburger.styles";
 import { HamburgerBoxSr } from "./Hamburger.styles";
 import { HamburgerBox } from "./Hamburger.styles";

@@ -10,11 +10,17 @@ export const HamburgerContextProvider = (props) => {
     const [activeMobileMenu, setActiveMobileMenu] = useState(false);
     
     function openMobileMenu() {
-        setActiveMobileMenu(true);
+        if (!activeMobileMenu) {
+            setActiveMobileMenu(true);
+        }
+        
     }
     
     function closeMobileMenu() {
-        setActiveMobileMenu(false);
+        if (activeMobileMenu) {
+            setActiveMobileMenu(false);
+        }
+        
     }
     
     const context = {

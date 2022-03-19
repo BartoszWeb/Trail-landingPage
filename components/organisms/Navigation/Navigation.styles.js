@@ -26,9 +26,9 @@ export const NavContainer = styled.nav`
 `;
 
 
-export const StyledLogo = styled.a`
+export const StyledLogo = styled.button`
   display: block;
-  width: 90px;
+  width: 110px;
   margin-top: -5px;
   background-color: transparent;
   border: none;

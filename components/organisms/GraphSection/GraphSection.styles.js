@@ -41,15 +41,3 @@ export const RightColumn = styled.div`
     padding: 0 3em;
   }
 `;
-
-export const StyledTrailSteps = styled.div`
-  position: absolute;
-  width: 300px;
-  z-index: -1;
-  left: -10%;
-
-  @media (max-width: 1000px) {
-    left: 70%;
-    width: 200px;
-  }
-`;

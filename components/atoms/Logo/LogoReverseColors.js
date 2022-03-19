@@ -3,7 +3,7 @@ const pathToLogo = "assets/logo-trail-reversColors.svg"
 
 const propsLogo = {
     src: pathToLogo,
-    alt: 'logo'
+    alt: 'Trail - home page',
 };
 
 

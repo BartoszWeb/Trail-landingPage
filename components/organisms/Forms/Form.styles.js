@@ -20,18 +20,9 @@ export const FormContainer = styled.form`
 `;
 
 export const StyledParagraph = styled.h2`
-  margin: 1.5em 0 0.3em 0;
+  margin: 1.5em 0 1em 0;
   font-size: 1.3rem;
   font-weight: ${ ({ theme }) => theme.font.thin };
-`;
-
-export const StyledInput = styled.input`
-  width: 100%;
-  height: 3em;
-  border: none;
-  border-bottom: 1px solid #e3e3e3;
-  margin: 0.2em 0;
-  padding-left: 0.2em;
 `;
 
 
@@ -51,5 +42,46 @@ export const FormButton = styled.button`
 
 export const Error = styled.small`
   margin-top: 0.1em;
+  margin-left: 2px;
   color: red;
+`;
+
+export const StyledInput = styled.input`
+  width: 100%;
+  height: 4em;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  padding-left: 0.5em;
+
+  :focus {
+    border: 1px solid #ddb01a;
+    outline: none;
+  }
+
+  :valid ~ label, :focus ~ label {
+    transform: translateY(-15px);
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+`;
+
+
+export const FormLabel = styled.label`
+  color: #515151;
+  display: inline-block;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 300;
+  position: absolute;
+  pointer-events: none;
+  left: 4px;
+  top: 18px;
+  will-change: transform;
+  transition: all .3s ease;
+`;
+
+export const InputWrapper = styled.div`
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5em;
 `;

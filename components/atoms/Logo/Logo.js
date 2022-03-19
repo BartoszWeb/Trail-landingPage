@@ -2,7 +2,7 @@ import { ImageComponent } from "../ImageComponent/ImageComponent";
 
 const propsLogo = {
     src: 'assets/logo-trail.svg',
-    alt: 'logo',
+    alt: 'Trail - home page',
     preLoading: true
 };
 

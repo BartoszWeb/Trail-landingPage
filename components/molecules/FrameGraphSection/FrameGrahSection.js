@@ -1,17 +1,12 @@
-import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
-import { BoxContainer } from "../../atoms/Box/BoxContainer";
-import { GraphAnimation } from "../../atoms/GraphAnimation/GraphAnimation";
-import { ImageComponent } from "../../atoms/ImageComponent/ImageComponent";
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import styled from "styled-components";
+import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
+import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { FrameGraph } from "../../atoms/Frame/FrameGraph";
-
+import { CssGraphAnimation } from "../../atoms/CssGraphAnimation/CssGraphAnimation";
 const graphTrailLogo = "assets/trail-graph.svg";
-const propsToGraph = {
-    src: "assets/snapshotGraphAnimation.webp",
-    alt: "graph-animation",
-};
+
 
 const Frame = styled.div`
   display: flex;
@@ -68,7 +63,7 @@ export const FrameGraphSection = ({ graphAnimationSelector }) => {
         <FrameGraph width={ "100%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
             <LogoGraph/>
             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>Best selling pages</BoxContainer>
-            { isTriggerGraphAnimation ? <GraphAnimation/> : <ImageComponent props={ propsToGraph }/> }
+            { isTriggerGraphAnimation && <CssGraphAnimation/> }
         </FrameGraph>
     );
 };

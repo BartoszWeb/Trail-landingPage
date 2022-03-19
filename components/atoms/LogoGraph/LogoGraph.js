@@ -11,7 +11,7 @@ const LogoTrail = styled.div`
 export const LogoGraph = () => {
     const propsLogoGraph = {
         src: "assets/trail-graph.svg",
-        alt: "logo",
+        alt: "Logo graph - Trail",
         preLoading: true
     };
     

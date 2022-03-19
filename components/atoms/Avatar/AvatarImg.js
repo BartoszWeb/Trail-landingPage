@@ -9,7 +9,7 @@ const AvatarWrapper = styled.div`
 export const AvatarImg = ({ path }) => {
     const propsAvatar = {
         src: path,
-        alt: "avatar",
+        alt: "team member avatar",
     };
     
     return (

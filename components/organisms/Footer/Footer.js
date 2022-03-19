@@ -63,7 +63,7 @@ export const Footer = () => {
                     <FooterItem padding={ "0 1.5em" } fontSize={ "1.2rem" } mediaFontSize={ "1rem" } href={ "/" }
                                 title={ "Terms" }/>
                     <FooterItem padding={ "0 1.5em" } fontSize={ "1.2rem" } mediaFontSize={ "1rem" } href={ "/" }
-                                title={ "@2021 Technologies, Inc" }/>
+                                title={ "@2022 Technologies, Inc" }/>
                 </TermsUl>
             </TermsWrapper>
         </FooterWrapper>

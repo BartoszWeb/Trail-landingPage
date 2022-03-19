@@ -6,13 +6,17 @@ export const MenuContainer = styled.ul`
   justify-content: flex-start;
 `;
 
-export const StyledLogo = styled.a`
+export const StyledLogo = styled.button`
+  background-color: transparent;
+  border: none;
   display: block;
   cursor: pointer;
   width: 150px;
   margin-top: -5px;
 `;
-export const StyledLink = styled.a`
+export const StyledLink = styled.button`
+  background-color: transparent;
+  border: none;
   padding: 0.5em;
   @media (max-width: 1200px) {
     padding: 0.2em;
