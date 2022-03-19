@@ -5,7 +5,7 @@ const GraphWrapper = styled.div`
   flex-direction: column-reverse;
   margin: 0;
   width: 100%;
-  padding: 2em;
+  padding: 2em 2em 2em 1em;
 
 `;
 const Bar = styled.div`
@@ -57,32 +57,28 @@ const transform = (width) => keyframes`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 0.8fr 1fr;
+  align-items: center;
 `;
 
 const ParagraphHtml = styled.p`
   max-width: 100%;
   height: calc(1rem * 1 * 2);
   overflow: hidden;
+  word-break: break-all;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-
-
 `;
 export const CssGraphAnimation = () => {
     return (
         <GraphWrapper>
             <Wrapper>
-                <ParagraphHtml>www.trail.com/our-team</ParagraphHtml>
-                <Bar width={ "5%" }/>
-            </Wrapper>
-            <Wrapper>
                 <ParagraphHtml>www.trail.com/contact</ParagraphHtml>
                 <Bar width={ "10%" }/>
             </Wrapper>
             <Wrapper>
-                <ParagraphHtml>how-to-install-trail-on-the-website</ParagraphHtml>
+                <ParagraphHtml>www.trail.com/how-to-install-trail-on-the-website</ParagraphHtml>
                 <Bar width={ "20%" }/>
             </Wrapper>
             <Wrapper>

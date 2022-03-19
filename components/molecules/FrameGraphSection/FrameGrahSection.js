@@ -5,6 +5,7 @@ import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { FrameGraph } from "../../atoms/Frame/FrameGraph";
 import { CssGraphAnimation } from "../../atoms/CssGraphAnimation/CssGraphAnimation";
+import { FakeGraph } from "../../atoms/CssGraphAnimation/FakeGraph";
 const graphTrailLogo = "assets/trail-graph.svg";
 
 
@@ -63,7 +64,7 @@ export const FrameGraphSection = ({ graphAnimationSelector }) => {
         <FrameGraph width={ "100%" } logoSrc={ graphTrailLogo } padding={ "1.2em 0 0 0" }>
             <LogoGraph/>
             <BoxContainer margin={ "1em 0 0 0" } fontWeight={ "500" }>Best selling pages</BoxContainer>
-            { isTriggerGraphAnimation && <CssGraphAnimation/> }
+            { isTriggerGraphAnimation ? <CssGraphAnimation/> : <FakeGraph/> }
         </FrameGraph>
     );
 };
