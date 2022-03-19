@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useFormik } from "formik";
 import { Validate } from "./FormValidation";
-import { Error, FormLabel, InputWrapper } from "./Form.styles";
+import { Error, FormLabel, InputWrapper, LogoContainer, LogoWrapper } from "./Form.styles";
 import { FormContainer, StyledLogo, StyledParagraph, StyledInput, FormButton } from "./Form.styles";
 import { Logo } from "../../atoms/Logo/Logo";
 import { useContext } from "react";
@@ -12,6 +12,7 @@ const initialValues = {
     email: "",
     password: ""
 };
+
 
 function SignForm() {
     const notificationContext = useContext(NotificationContext);
@@ -49,11 +50,15 @@ function SignForm() {
     
     return (
         <FormContainer onSubmit={ formik.handleSubmit }>
-            <Link passHref href="/">
-                <StyledLogo>
-                    <Logo/>
-                </StyledLogo>
-            </Link>
+            <LogoContainer>
+                <LogoWrapper>
+                    <Link passHref href="/">
+                        <StyledLogo>
+                            <Logo/>
+                        </StyledLogo>
+                    </Link>
+                </LogoWrapper>
+            </LogoContainer>
             <StyledParagraph>Sign Up</StyledParagraph>
             <InputWrapper>
                 <StyledInput

@@ -18,6 +18,7 @@ export const StyledLink = styled.button`
   background-color: transparent;
   border: none;
   padding: 0.5em;
+  cursor: pointer;
   @media (max-width: 1200px) {
     padding: 0.2em;
   }

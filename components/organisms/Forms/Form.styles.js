@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const StyledLogo = styled.a`
-  width: 150px;
-
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  max-height: 100%;
 `;
 export const FormContainer = styled.form`
   max-width: 600px;
@@ -84,4 +87,14 @@ export const InputWrapper = styled.div`
   width: 100%;
   position: relative;
   margin-bottom: 0.5em;
+`;
+
+export const LogoWrapper = styled.div`
+  width: 100%;
+  position: relative;
+  padding-bottom: calc(75 / 150 * 100%);
+`;
+
+export const LogoContainer = styled.div`
+  width: 150px;
 `;

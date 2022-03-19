@@ -24,7 +24,7 @@ const Bar = styled.div`
   position: relative;
   display: inline-block;
   animation-name: ${ props => transform(props.width) };
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
