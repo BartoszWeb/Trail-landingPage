@@ -11,7 +11,7 @@ const GraphWrapper = styled.div`
 const Bar = styled.div`
   width: 0;
   height: 40px;
-  margin: 5px 20px;
+  margin: 4px 20px;
   background-color: #004264;
   position: relative;
   display: inline-block;
@@ -57,16 +57,19 @@ const transform = (width) => keyframes`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 0.8fr 1fr;
+  visibility: visible;
 `;
 
 const ParagraphHtml = styled.p`
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  text-align: right;
-  margin-top: -13px;
-  font-weight: 700;
-  word-break: break-all;
+  visibility: visible;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }
