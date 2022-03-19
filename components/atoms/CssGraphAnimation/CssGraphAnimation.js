@@ -62,7 +62,8 @@ const Wrapper = styled.div`
 
 const ParagraphHtml = styled.p`
   max-width: 100%;
-  height: calc(1rem * 1 * 2);
+  font-size: 0.9rem;
+  height: calc(0.9rem * 1 * 2);
   overflow: hidden;
   word-break: break-all;
   text-overflow: ellipsis;
@@ -70,6 +71,7 @@ const ParagraphHtml = styled.p`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 `;
+
 export const CssGraphAnimation = () => {
     return (
         <GraphWrapper>
