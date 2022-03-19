@@ -56,14 +56,14 @@ const transform = (width) => keyframes`
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 0.8fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
   align-items: center;
 `;
 
 const Paragraph = styled.p`
   max-width: 100%;
-  font-size: 0.9rem;
-  height: calc(0.9rem * 1 * 2);
+  font-size: 0.8rem;
+  height: calc(0.8rem * 1 * 2);
   overflow: hidden;
   word-break: break-all;
   text-overflow: ellipsis;
