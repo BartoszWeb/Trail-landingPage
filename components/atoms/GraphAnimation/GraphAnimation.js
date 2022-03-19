@@ -9,6 +9,14 @@ const GraphWrapper = styled.div`
 
 `;
 const Bar = styled.div`
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
   width: 0;
   height: 40px;
   margin: 4px 20px;
