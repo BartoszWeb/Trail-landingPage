@@ -70,7 +70,7 @@ const ParagraphHtml = styled.p`
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 350px) {
     font-size: 0.6rem;
   }
 `;
