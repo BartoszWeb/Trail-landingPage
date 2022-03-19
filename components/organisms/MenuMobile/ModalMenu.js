@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import Link from "next/link";
-import { List, MenuNav, StyledButtonDemo} from "./ModalMenu.styles";
+import { List, MenuNav, StyledButtonDemo } from "./ModalMenu.styles";
 import { ListItem } from "./ModalMenu.styles";
 import { StyledButton } from "./ModalMenu.styles";
 import { StyledButtonSignUp } from "./ModalMenu.styles";
@@ -19,6 +19,20 @@ export const ModalMenu = () => {
             ? nav.current.classList.add("active")
             : nav.current.classList.remove("active");
     }, [activeMenuMobile]);
+    
+    useEffect(() => {
+        const list = nav.current;
+        
+        function handleClick(e) {
+            if (e.target === list || list.firstChild) {
+                closeMobileMenu();
+            }
+        }
+        
+        list.addEventListener("click", handleClick);
+        
+        return () => removeEventListener("click", handleClick);
+    }, []);
     
     return (
         <MenuNav ref={ nav }>

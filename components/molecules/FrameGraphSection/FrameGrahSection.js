@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import styled from "styled-components";
 import { LogoGraph } from "../../atoms/LogoGraph/LogoGraph";
 import { BoxContainer } from "../../atoms/Box/BoxContainer";
 import { FrameGraph } from "../../atoms/Frame/FrameGraph";

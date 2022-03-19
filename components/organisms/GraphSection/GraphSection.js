@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { ParagraphHtml } from "../../atoms/Paragraph/ParagraphHtml";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
