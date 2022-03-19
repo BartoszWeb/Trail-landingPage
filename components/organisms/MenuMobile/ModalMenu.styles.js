@@ -48,7 +48,7 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   width: 200px;
-  padding: 1em;
+  padding: 0.7em;
   font-size: 1.1rem;
   color: ${ ({ theme }) => theme.colors.textColor };
   background-color: ${ ({ theme }) => theme.colors.secondaryColor };
