@@ -2,6 +2,7 @@ import styled from "styled-components";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
+
 const AnimationWrapper = styled.section`
   max-width: 1480px;
   margin: 0 auto 4em auto;
@@ -13,12 +14,13 @@ const AnimationWrapper = styled.section`
     display: none;
   }
 `;
+
+const DynamicComponent = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
 const FakedImport = dynamic(() => {
     return import("../../atoms/HeroAnimation/HeroAnimation").then((result) => {
         return result.default;
-        
     });
-});
+}, { ssr: false });
 
 export const HeroAnimation = () => {
     const [isDesktop, setIsDesktop] = useState();
@@ -31,7 +33,7 @@ export const HeroAnimation = () => {
     
     return (
         <AnimationWrapper>
-            { isDesktop && <FakedImport/> }
+          <DynamicComponent/>
         </AnimationWrapper>
     );
 };
