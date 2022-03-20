@@ -13,27 +13,25 @@ const AnimationWrapper = styled.section`
     display: none;
   }
 `;
-
-const DynamicHeroAnimation = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
+const FakedImport = dynamic(() => {
+    return import("../../atoms/HeroAnimation/HeroAnimation").then((result) => {
+        return result.default;
+        
+    });
+});
 
 export const HeroAnimation = () => {
     const [isDesktop, setIsDesktop] = useState();
     
     useEffect(() => {
         if (window.innerWidth > 800) {
-            const FakedImport = dynamic(() => {
-                return import("../../atoms/HeroAnimation/HeroAnimation").then(() => {
-                    return () => null;
-                });
-            });
-            
             setIsDesktop(true);
         }
     });
     
     return (
         <AnimationWrapper>
-            { isDesktop && <DynamicHeroAnimation/> }
+            { isDesktop && <FakedImport/> }
         </AnimationWrapper>
     );
 };
