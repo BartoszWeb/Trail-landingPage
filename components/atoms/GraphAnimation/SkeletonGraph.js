@@ -1,36 +1,4 @@
-import styled from "styled-components";
-
-const SkeletonGraphContainer = styled.div`
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 0;
-  width: 100%;
-  padding: 2em 2em 2em 1em;
-
-`;
-const SkeletonBar = styled.div`
-  width: 0;
-  height: 40px;
-  margin: 4px 20px;
-`;
-
-const SkeletonWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  align-items: center;
-`;
-
-const SkeletonParagraph = styled.p`
-  max-width: 100%;
-  font-size: 0.8rem;
-  height: calc(0.8rem * 1 * 2);
-  overflow: hidden;
-  word-break: break-all;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-`;
+import { SkeletonGraphContainer, SkeletonWrapper, SkeletonParagraph, SkeletonBar } from "./GraphAnimation.style";
 
 export const SkeletonGraph = () => {
     return (

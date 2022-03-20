@@ -11,10 +11,10 @@ export const SectionSubtitle = styled.h2`
   ::after {
     content: '';
     position: absolute;
-    top: -14px;
     ${ ({ textAlign }) => textAlign ? 'right' : 'left' }: -30px;
-    width: 50px;
-    height: 50px;
+    top: -35px;
+    width: 70px;
+    height: 110px;
     border-radius: 2px;
     background-color: ${ ({ theme }) => theme.colors.primaryColor };
     z-index: -1;

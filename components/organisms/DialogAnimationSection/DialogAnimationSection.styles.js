@@ -14,7 +14,7 @@ export const GridTwoColumns = styled.div`
     grid-template-columns: 1fr;
   }
   @media (max-width: 600px) {
-    margin-top: 3.5em;
+    margin-top: 4em;
   }
 `;
 
@@ -23,9 +23,9 @@ export const LeftColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 25px auto 0 auto;
   @media (max-width: 1000px) {
     width: 90%;
-    margin: 0 auto;
   }
 
 `;
