@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import HeroAnim from "../../atoms/HeroAnimation/HeroAnimation";
 
 const AnimationWrapper = styled.section`
   max-width: 1480px;
@@ -15,7 +16,15 @@ const AnimationWrapper = styled.section`
   }
 `;
 
-const DynamicHeroAnimation = dynamic(/* webpackPreload: true */() => import("../../atoms/HeroAnimation/HeroAnimation"));
+const DynamicHeroAnimation = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
+
+const FakedImport = dynamic(() => {
+    return import("../../atoms/HeroAnimation/HeroAnimation").then(() => {
+        // empty react component
+        return () => null;
+    });
+});
+
 
 export const HeroAnimation = () => {
     const [isDesktop, setIsDesktop] = useState();
@@ -28,7 +37,7 @@ export const HeroAnimation = () => {
     
     return (
         <AnimationWrapper>
-            { isDesktop && <DynamicHeroAnimation/> }
+            { isDesktop && <HeroAnim/> }
         </AnimationWrapper>
     );
 };
