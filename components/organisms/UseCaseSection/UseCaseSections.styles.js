@@ -22,10 +22,7 @@ export const StyledButton = styled(ButtonSignUp)`
   @media (max-width: 800px) {
     margin-top: 1em;
   }
-
-  @media (max-width: 380px) {
-    margin-top: 2.5em;
-  }
+  
 `;
 export const IframeSvgFake = styled.img`
   background: url(${ "/assets/laptop-canvas.svg" }) center center no-repeat;

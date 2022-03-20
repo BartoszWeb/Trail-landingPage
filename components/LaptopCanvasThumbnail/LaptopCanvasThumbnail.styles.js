@@ -44,6 +44,6 @@ export const StyledPlayIcon = styled.button`
   transform: translateX(-50%) translateY(-50%);
   @media (max-width: 600px) {
     width: 80px;
-    transform: translateX(-40%) translateY(-50%);
+
   }
 `;
