@@ -16,18 +16,18 @@ const AnimationWrapper = styled.section`
 `;
 
 
-const FakedImport = dynamic(() => {
-    return import("../../atoms/HeroAnimation/HeroAnimation").then(() => {
-        return () => null;
-    });
-});
-
-
 export const HeroAnimation = () => {
     const [isDesktop, setIsDesktop] = useState();
     
     useEffect(() => {
         if (window.innerWidth > 800) {
+            
+            const FakedImport = dynamic(() => {
+                return import("../../atoms/HeroAnimation/HeroAnimation").then(() => {
+                    return () => null;
+                });
+            });
+            
             setIsDesktop(true);
         }
     });
