@@ -15,7 +15,7 @@ export const IframeSVG = styled.iframe`
   background: url(${ "/assets/laptop-canvas.svg" }) center center no-repeat;
   box-sizing: border-box;
   background-size: contain;
-  padding: 13.2% 17.5% 14.4% 16.4%;
+  padding: 13.2% 17.6% 14.4% 16.6%;
   position: absolute;
   top: 0;
   left: 0;
@@ -40,7 +40,6 @@ export const IframeSVG = styled.iframe`
   }
 
   @media (max-width: 370px) {
-    margin-top: 1.5em;
     padding: 16.5% 17.5% 17.5% 16.4%;
   }
 
