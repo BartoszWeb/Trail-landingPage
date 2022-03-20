@@ -5,7 +5,7 @@ export const UseCaseSectionWrapper = styled.section`
   max-width: 1280px;
   margin: 7em auto 3em auto;
   display: grid;
-  
+
   @media (max-width: 600px) {
     margin: 3.5em auto 3em auto;
     padding-top: 25px;
@@ -22,7 +22,7 @@ export const StyledButton = styled(ButtonSignUp)`
   @media (max-width: 800px) {
     margin-top: 1em;
   }
-  
+
 `;
 export const IframeSvgFake = styled.img`
   background: url(${ "/assets/laptop-canvas.svg" }) center center no-repeat;

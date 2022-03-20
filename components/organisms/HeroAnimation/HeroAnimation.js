@@ -15,7 +15,7 @@ const AnimationWrapper = styled.section`
   }
 `;
 
-const DynamicHeroAnimation = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
+const DynamicHeroAnimation = dynamic(/* webpackPreload: true */() => import("../../atoms/HeroAnimation/HeroAnimation"));
 
 export const HeroAnimation = () => {
     const [isDesktop, setIsDesktop] = useState();
