@@ -8,7 +8,7 @@ export const WrapperSVG = styled.div`
   overflow: hidden;
 
   @media (max-width: 800px) {
-    margin: -2em 0 -1em 0;
+    margin: -1em 0;
   }
 `;
 

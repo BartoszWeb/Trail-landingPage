@@ -8,13 +8,13 @@ export const SectionSubtitle = styled.h2`
   position: relative;
   z-index: 0;
 
-  ::after {
+  ::before {
     content: '';
     position: absolute;
     ${ ({ textAlign }) => textAlign ? 'right' : 'left' }: -30px;
-    top: -35px;
+    top: -25px;
     width: 70px;
-    height: 110px;
+    height: 80px;
     border-radius: 2px;
     background-color: ${ ({ theme }) => theme.colors.primaryColor };
     z-index: -1;
