@@ -13,6 +13,7 @@ const AnimationWrapper = styled.section`
     display: none;
   }
 `;
+
 const DynamicHeroAnim = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
 
 

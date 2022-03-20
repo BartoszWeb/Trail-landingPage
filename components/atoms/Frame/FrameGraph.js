@@ -23,10 +23,10 @@ export const FrameGraph = styled.div`
     background-color: white;
     display: block;
     position: absolute;
-    top: -33px;
+    top: -13px;
     left: 10px;
     width: 100px;
-    height: 60px;
+    height: 30px;
   }
 
   @media (max-width: 1000px) {

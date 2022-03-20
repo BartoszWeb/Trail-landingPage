@@ -14,7 +14,7 @@ export const GridTwoColumns = styled.div`
     grid-template-columns: 1fr;
   }
   @media (max-width: 600px) {
-    margin-top: 4em;
+    margin-top: 2em;
   }
 `;
 
