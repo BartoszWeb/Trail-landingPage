@@ -28,6 +28,7 @@ export const StyledTitle = styled(ParagraphHtml)`
 
 export const StyledPost = styled(ParagraphHtml)`
   text-align: left;
+  line-height: 1.2;
 `;
 
 export const AvatarWrapper = styled.div`

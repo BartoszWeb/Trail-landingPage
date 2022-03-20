@@ -7,16 +7,19 @@ import { LaptopCanvas } from "../../atoms/LaptopCanvas/LaptopCanvas";
 
 export const UseCaseSection = () => {
     const [fetchYoutubeVideo, setFetchYoutubeVideo] = useState(false);
+    
     const fetchYoutubeHandler = () => {
         setFetchYoutubeVideo(true);
     };
+    
     return (
         <>
             <UseCaseSectionWrapper id="use-cases">
                 <SectionSubtitle>Use cases</SectionSubtitle>
                 {
                     fetchYoutubeVideo ? <LaptopCanvas/> :
-                        <LaptopCanvasThumbnail fetchYoutubeHandler={ fetchYoutubeHandler }/>
+                        <LaptopCanvasThumbnail fetchYoutubeVideo={ fetchYoutubeVideo }
+                                               fetchYoutubeHandler={ fetchYoutubeHandler }/>
                 }
                 <StyledButton href="/signup">SIGN UP FREE</StyledButton>
             </UseCaseSectionWrapper>

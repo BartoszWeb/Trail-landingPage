@@ -37,3 +37,14 @@ export const VideoThumbnail = styled.img`
     padding: 16.9% 17.5% 18% 16.4%;
   }
 `;
+
+export const StyledPlayIcon = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-35%) translateY(-50%);
+`;
