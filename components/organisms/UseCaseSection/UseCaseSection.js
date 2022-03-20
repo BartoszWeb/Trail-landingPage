@@ -15,7 +15,7 @@ export const UseCaseSection = () => {
     return (
         <>
             <UseCaseSectionWrapper id="use-cases">
-                <SectionSubtitle margin={ "0 1.5em 2em 1.5em" }>Use cases</SectionSubtitle>
+                <SectionSubtitle>Use cases</SectionSubtitle>
                 {
                     fetchYoutubeVideo ? <LaptopCanvas/> :
                         <LaptopCanvasThumbnail fetchYoutubeVideo={ fetchYoutubeVideo }

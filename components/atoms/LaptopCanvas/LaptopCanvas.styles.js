@@ -6,6 +6,9 @@ export const WrapperSVG = styled.div`
   padding: 3% 5% 67.5% 5%;
   margin: -4em 0 -3em 0;
   overflow: hidden;
+  @media (max-width: 800px) {
+    margin: 0;
+  }
 `;
 
 export const IframeSVG = styled.iframe`
