@@ -12,10 +12,6 @@ export const VideoThumbnail = styled.img`
   height: 100%;
   border: none;
 
-  @media (max-width: 1000px) {
-    left: 3%;
-  }
-
   @media (max-width: 800px) {
     padding: 13.9% 17.5% 14.9% 16.4%;
   }
