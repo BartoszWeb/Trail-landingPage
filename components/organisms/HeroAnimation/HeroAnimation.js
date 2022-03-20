@@ -10,17 +10,14 @@ const AnimationWrapper = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-
   @media (max-width: 800px) {
     display: none;
   }
 `;
 
-const DynamicHeroAnimation = dynamic(() => import("../../atoms/HeroAnimation/HeroAnimation"));
 
 const FakedImport = dynamic(() => {
     return import("../../atoms/HeroAnimation/HeroAnimation").then(() => {
-        // empty react component
         return () => null;
     });
 });
