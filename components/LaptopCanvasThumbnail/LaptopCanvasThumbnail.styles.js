@@ -29,7 +29,6 @@ export const VideoThumbnail = styled.img`
   }
 
   @media (max-width: 370px) {
-    margin-top: 1.5em;
     padding: 16.5% 17.5% 17.5% 16.4%;
   }
 
@@ -46,5 +45,9 @@ export const StyledPlayIcon = styled.button`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-35%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  @media (max-width: 600px) {
+    width: 80px;
+    transform: translateX(-40%) translateY(-50%);
+  }
 `;
