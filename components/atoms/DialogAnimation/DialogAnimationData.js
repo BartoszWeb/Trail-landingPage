@@ -7,7 +7,7 @@ export default {
     "h": 600,
     "nm": "Comp 1",
     "ddd": 0,
-    "assets": [{ "id": "image_0", "w": 600, "h": 712, "u": "/assets/animation-images/", "p": "dialog.svg", "e": 0 }],
+    "assets": [{ "id": "image_0", "w": 600, "h": 712, "u": "/assets/animation-images/", "p": "dialogAnimation.svg", "e": 0 }],
     "fonts": {
         "list": [{
             "fName": "Lato-Regular",
@@ -25,7 +25,7 @@ export default {
         "ks": {
             "o": { "a": 0, "k": 100, "ix": 11 },
             "r": { "a": 0, "k": 0, "ix": 10 },
-            "p": { "a": 0, "k": [395, 356.5, 0], "ix": 2 },
+            "p": { "a": 0, "k": [395, 355.5, 0], "ix": 2 },
             "a": { "a": 0, "k": [0, 0, 0], "ix": 1 },
             "s": { "a": 0, "k": [103.644, 103.644, 100], "ix": 6 }
         },
@@ -85,7 +85,7 @@ export default {
         "ks": {
             "o": { "a": 0, "k": 100, "ix": 11 },
             "r": { "a": 0, "k": 0, "ix": 10 },
-            "p": { "a": 0, "k": [216.5, 185, 0], "ix": 2 },
+            "p": { "a": 0, "k": [217.5, 184, 0], "ix": 2 },
             "a": { "a": 0, "k": [0, 0, 0], "ix": 1 },
             "s": { "a": 0, "k": [103.644, 103.644, 100], "ix": 6 }
         },
