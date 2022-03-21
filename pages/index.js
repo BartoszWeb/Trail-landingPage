@@ -23,10 +23,10 @@ function HomePage() {
             sections.splice(0, 2);
             sections.pop();
             sections.forEach(section => {
-                gsap.fromTo(section, { y: "100", opacity: 0, }, {
-                    y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
+                gsap.fromTo(section, { y: "100", opacity: 0.5, }, {
+                    y: 0, opacity: 1, stagger: 0.2, duration: 1.3, ease: "easeInOut", scrollTrigger: {
                         trigger: section,
-                        start: "top 90%",
+                        start: "top bottom",
                     }
                 });
             });

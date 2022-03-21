@@ -11,18 +11,20 @@ const WrapperAnimation = styled.div`
 `;
 
 
-function DialogAnimation() {
+function DialogAnimation({ state }) {
     const defaultOptions = {
         loop: false,
-        autoplay: true,
+        autoplay: false,
         animationData: dialogAnimation,
-        rendererSettings: { preserveAspectRatio: "xMidYMid slice" }
+        rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
     };
     
     return (
         <>
             <WrapperAnimation>
-                <DialogGraph tabIndex={ -1 } options={ defaultOptions }/>
+                <DialogGraph tabIndex={ -1 } options={ defaultOptions }
+                             isStopped={ state.isStopped }
+                             isPaused={ state.isPaused }/>
             </WrapperAnimation>
         </>
     );

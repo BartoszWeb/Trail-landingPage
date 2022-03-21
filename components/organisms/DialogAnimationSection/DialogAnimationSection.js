@@ -9,13 +9,12 @@ import { gsap } from "gsap";
 import dynamic from "next/dynamic";
 import { FrameGraph } from "../../molecules/FrameDialogSection/FrameDialogSection";
 
-
 const DynamicDialogAnimation = dynamic(() => import("../../atoms/DialogAnimation/DialogAnimation"));
 
 export const DialogAnimationSection = () => {
     const [isDesktop, setIsDesktop] = useState();
+    const [state, setState] = useState({ isStopped: false, isPaused: false });
     
-    const [isTriggerDialogAnimation, setIsTriggerDialogAnimation] = useState(false);
     const dialogAnimationSelector = useRef(null);
     
     useEffect(() => {
@@ -25,7 +24,7 @@ export const DialogAnimationSection = () => {
                 opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
                     trigger: animation,
                     start: "top bottom",
-                    onEnter: () => setIsTriggerDialogAnimation(true)
+                    onEnter: () => setState({ isStopped: false, isPaused: false })
                 }
             });
         }
@@ -46,10 +45,11 @@ export const DialogAnimationSection = () => {
                         <FrameGraph/>
                         <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
                     </LeftColumn>
-                    { isDesktop &&
-                    <RightColumn>
-                        { isTriggerDialogAnimation && <DynamicDialogAnimation/> }
-                    </RightColumn>
+                    {
+                        isDesktop &&
+                        <RightColumn>
+                            <DynamicDialogAnimation state={ state }/>
+                        </RightColumn>
                     }
                 </GridTwoColumns>
             </DialogSectionWrapper>

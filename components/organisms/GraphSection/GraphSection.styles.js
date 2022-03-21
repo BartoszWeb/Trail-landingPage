@@ -8,7 +8,7 @@ export const GridTwoColumns = styled.div`
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   margin-top: 5em;
-
+  padding: 5px;
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
