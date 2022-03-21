@@ -11,6 +11,7 @@ export const MainTemplate = ({ children }) => {
     
     const activeNotification = notificationContext.notification;
     const menuMobileActive = context.activeMobileMenu;
+    
     return (
         <>
             <Navigation/>

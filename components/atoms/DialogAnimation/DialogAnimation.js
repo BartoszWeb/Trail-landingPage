@@ -1,6 +1,7 @@
 import DialogGraph from "react-lottie-wrapper";
 import dialogAnimation from "./DialogAnimationData";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const WrapperAnimation = styled.div`
   margin: -2em auto 0 auto;

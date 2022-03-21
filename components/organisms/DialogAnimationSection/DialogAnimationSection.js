@@ -23,8 +23,9 @@ export const DialogAnimationSection = () => {
             gsap.fromTo(animation, { opacity: 0, }, {
                 opacity: 1, stagger: 0.2, duration: 1, ease: "easeInOut", scrollTrigger: {
                     trigger: animation,
-                    start: "top bottom",
-                    onEnter: () => setState({ isStopped: false, isPaused: false })
+                    start: "top 90%",
+                    onEnter: () => setState({ isStopped: false, isPaused: false }),
+                    onEnterBack: () => setState({ isStopped: false, isPaused: false }),
                 }
             });
         }
