@@ -25,6 +25,7 @@ export const SkeletonParagraph = styled.p`
   font-size: 0.8rem;
   height: calc(0.8rem * 1 * 2);
   overflow: hidden;
+  text-align: right;
   word-break: break-all;
   text-overflow: ellipsis;
   display: -webkit-box;
