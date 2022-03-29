@@ -42,7 +42,7 @@ export const BlogSection = () => {
                     />
                 </GridPosts>
                 <ButtonWrapper>
-                    <Link href="/blog" passHref>
+                    <Link href="https://blog.trailofsales.com" passHref>
                         <ButtonSignUp href="/">VISIT TRAIL`S BLOG</ButtonSignUp>
                     </Link>
                 </ButtonWrapper>
