@@ -2,7 +2,7 @@ import { SectionSubtitle } from "../../atoms/Subtitles/SectionSubtitle";
 import { UseCaseSectionWrapper } from "./UseCaseSections.styles";
 import { StyledButton } from "./UseCaseSections.styles";
 import { useState } from "react";
-import { LaptopCanvasThumbnail } from "../../LaptopCanvasThumbnail/LaptopCanvasThumbnail";
+import { LaptopCanvasThumbnail } from "../../atoms/LaptopCanvasThumbnail/LaptopCanvasThumbnail";
 import { LaptopCanvas } from "../../atoms/LaptopCanvas/LaptopCanvas";
 
 export const UseCaseSection = () => {

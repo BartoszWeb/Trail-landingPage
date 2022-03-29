@@ -1,6 +1,6 @@
 import { LoginForm } from "../../components/organisms/Forms/LoginForm";
 
-function Index() {
+function Login() {
     return (
         <>
             <LoginForm/>
@@ -8,4 +8,4 @@ function Index() {
     );
 }
 
-export default Index;
+export default Login;

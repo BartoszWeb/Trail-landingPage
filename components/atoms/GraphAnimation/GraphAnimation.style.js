@@ -86,9 +86,7 @@ export const Bar = styled.div`
 
 `;
 export const transform = (width) => keyframes`
-  0% {
-    width: 0
-  }
+
 
   100% {
     width: ${ width };

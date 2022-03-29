@@ -1,7 +1,7 @@
-import { WrapperSVG } from "../atoms/LaptopCanvas/LaptopCanvas.styles";
+import { WrapperSVG } from "../LaptopCanvas/LaptopCanvas.styles";
 import { StyledPlayIcon, VideoThumbnail } from "./LaptopCanvasThumbnail.styles";
 import { useEffect, useRef } from "react";
-import { ImageComponent } from "../atoms/ImageComponent/ImageComponent";
+import { ImageComponent } from "../ImageComponent/ImageComponent";
 import styled from "styled-components";
 
 const propsPlay = {
