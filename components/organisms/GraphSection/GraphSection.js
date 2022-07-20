@@ -30,7 +30,7 @@ export const GraphSection = () => {
                             fontSize={ "1.3rem" }
                             fontWeight={ "400" }
                             margin={ "1em 0 0 0" }>
-                            The trail shows you which pages are the most often visited by buying users.
+                            Trail shows you which pages are most often visited by buying users.
                         </ParagraphHtml>
                         <ParagraphHtml
                             textAlign={ "center" }

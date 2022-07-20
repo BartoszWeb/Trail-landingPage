@@ -17,9 +17,9 @@ export const SignSection = () => {
         <>
             <HeadlineWrapper>
                 <MainHeadLine>Know your customers and boost your sales</MainHeadLine>
-                <Subtitle>Get your clients` buying pattern</Subtitle>
+                <Subtitle>Learn your clients' buying pattern</Subtitle>
                 <ButtonSignUp href="/signup">SIGN UP FREE</ButtonSignUp>
-                <ParagraphHtml textAlign={ "center" } margin={ "1em 0 0 0 " }>No credit cards required | No
+                <ParagraphHtml textAlign={ "center" } margin={ "1em 0 0 0 " }>No credit card required | No
                     commitment</ParagraphHtml>
             </HeadlineWrapper>
         </>

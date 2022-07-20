@@ -17,7 +17,7 @@ const initialValues = {
 function SignForm() {
     const notificationContext = useContext(NotificationContext);
     
-    const onSubmit = (values) => {
+    const onSubmit = (values, { resetForm }) => {
         notificationContext.showNotification({
             title: "Signing up...",
             message: "Registering...",
@@ -31,11 +31,12 @@ function SignForm() {
                     message: "Successfully registered",
                     status: "success"
                 });
+                resetForm();
             })
-            .catch(function () {
+            .catch(function (error) {
                 notificationContext.showNotification({
                     title: "Error",
-                    message: "Something went wrong!",
+                    message: error.response.data.message || "Something went wrong!",
                     status: "error"
                 });
             });

@@ -31,17 +31,17 @@ export const FrameGraph = () => {
         <FrameDialog width={ "90%" } logoSrc={ path } margin={ "0 auto 2em auto" }
                padding={ "2em" }>
             <LogoGraph/>
-            <BoxContainer><span><b>User visited:</b> “main page"</span></BoxContainer>
+            <BoxContainer><span><b>User visited:</b> “home   page"</span></BoxContainer>
             <NextStep/>
-            <BoxContainer><span><b>User read article:</b> "How works trail?”</span></BoxContainer>
+            <BoxContainer><span><b>User read article:</b> "How Trail works?”</span></BoxContainer>
             <NextStep/>
             <BoxContainer><span><b>User read article:</b> “How can I boost sales with trail?”</span></BoxContainer>
             <NextStep/>
-            <BoxContainer><span><b>User visited page:</b> “Use cases”</span></BoxContainer>
+            <BoxContainer><span><b>User visited page:</b> “User cases”</span></BoxContainer>
             <NextStep/>
             <BoxContainer><span><b>User visited page:</b> “Pricing”</span></BoxContainer>
             <NextStep/>
-            <BoxContainer><span><b>User singed up</b></span></BoxContainer>
+            <BoxContainer><span><b>User signed up</b></span></BoxContainer>
         </FrameDialog>
     );
 };

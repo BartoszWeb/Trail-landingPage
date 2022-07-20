@@ -15,34 +15,34 @@ export const BlogSection = () => {
                 <GridPosts>
                     <BlogPost
                         time="19.09.2022"
-                        title="Case studies how the Trail boosted sales."
-                        post="If you know the customers`s trail before buying you can get real benefits. For example, company X noticed that most of the users before buying a product, visited a specific web page on the blog. This information helped raise sales by 2 times, only because of a slight improvement on the website."
+                        title="Case studies how Trail boosted sales."
+                        post="If you know the customer's Trail before buying you can get real benefits. For example, company X noticed that most of the users visited a specific web page on the blog before buying a product. This information helped raise sales by 50% because of a slight improvement on the website."
                         url="/"
                     />
                     
                     <BlogPost
                         time="19.09.2022"
-                        title="How to boost sales with trail?"
-                        post="Users which buy your products followed by specific patterns. Very often visit the same pages, click on the same buttons however those who don't buy followed by the other patterns. If you get to know precisely patterns of buying customers, you will be able to transform not-buying customers into buying."
+                        title="How to boost sales with Trail."
+                        post="Users who bought your products followed specific patterns. Very often they visited the same pages, clicked on the same buttons. Those who didn't buy followed other patterns. If you get to know their precise buying patterns you will be able to transform potential customers into buying ones."
                         url="/"
                     />
                     
                     <BlogPost
                         time="19.09.2022"
-                        title="Why do you need to know the customer's sales trail?"
-                        post="The knowledge about how exactly thinks your customer, what he is exactly looking for, which information checks before buying is crucial to boost your sales. This knowledge shows you how to develop your business faster, how to improve your products and how to transform new visitors into customers more effectively."
+                        title="Why do you need to know the customers' Trail of sales?"
+                        post="The knowledge about how your customer thinks, what exactly they are looking for, and information they needed before buying is crucial to boost your sales. This knowledge helps you to develop your business faster, how to improve your products and how to transform new visitors into customers more effectively."
                         url="/"
                     />
                     
                     <BlogPost
                         time="19.09.2022"
-                        title="How to improve the best pages and get more customers?"
-                        post="There is a lot of methods to highlight the most important content. The simplest one and at the same time the most effective is to move this content to the top of the page. Over 50% of users even don't scroll the page to the bottom if the content on the top is not attractive."
+                        title="How to improve the best pages and get more customers."
+                        post="There are many methods to highlight the most important content on your website. The simplest and most effective way is to move this content to the top of the page. Over 50% of users even don't scroll to the bottom of the page if the content on the top is not attractive enough."
                         url="/"
                     />
                 </GridPosts>
                 <ButtonWrapper>
-                    <Link href="https://blog.trailofsales.com" passHref>
+                    <Link href="/blog" passHref>
                         <ButtonSignUp href="/">VISIT TRAIL`S BLOG</ButtonSignUp>
                     </Link>
                 </ButtonWrapper>

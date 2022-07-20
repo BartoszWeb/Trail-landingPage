@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { ButtonLogin } from "../../atoms/ButtonLogin/ButtonLogin";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
 import Link from "next/link";
-import { ButtonDemo } from "../../atoms/ButtonDemo/ButtonDemo";
+import { ButtonDashboard } from "../../atoms/ButtonDashboard/ButtonDashboard";
+import { useSession } from "next-auth/react";
+import { logOutHandler } from "../../../helpers/logout";
 
 const SignPanelWrapper = styled.ul`
   display: flex;
@@ -12,11 +14,35 @@ const SignPanelWrapper = styled.ul`
 
 
 export const SignPanelDesktop = () => {
+    const { status } = useSession();
+    if (status === "loading") {
+        return (
+            <SignPanelWrapper/>
+        );
+    }
+    
+    if (status === "authenticated") {
+        return (
+            <SignPanelWrapper>
+                <li>
+                    <ButtonLogin onClick={ logOutHandler }>Log out</ButtonLogin>
+                
+                </li>
+                <li>
+                    <Link href={ "/app" } passHref>
+                        <ButtonDashboard>Dashboard</ButtonDashboard>
+                    </Link>
+                </li>
+            </SignPanelWrapper>
+        );
+    }
+    
+    
     return (
         <SignPanelWrapper>
             <li>
                 <Link href={ "/demo" } passHref>
-                    <ButtonDemo>Demo App</ButtonDemo>
+                    <ButtonDashboard>Demo App</ButtonDashboard>
                 </Link>
             </li>
             <li>
@@ -26,7 +52,7 @@ export const SignPanelDesktop = () => {
             </li>
             <li>
                 <Link href={ "/signup" } passHref>
-                    <ButtonSignUp>Sing Up</ButtonSignUp>
+                    <ButtonSignUp>Sign Up</ButtonSignUp>
                 </Link>
             </li>
         </SignPanelWrapper>

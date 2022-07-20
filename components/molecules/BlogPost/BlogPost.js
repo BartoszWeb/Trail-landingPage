@@ -23,7 +23,7 @@ export const BlogPost = ({ time, title, post, url }) => {
     );
 };
 
-// BlogPost.propTypes = {
+// PostsSection.propTypes = {
 //     time: PropTypes.string.isRequired,
 //     title: PropTypes.string.isRequired,
 //     post: PropTypes.string.isRequired

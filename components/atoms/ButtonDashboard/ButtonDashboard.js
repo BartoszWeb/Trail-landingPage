@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonDemo = styled.a`
+export const ButtonDashboard = styled.a`
   background-color: ${ ({ theme }) => theme.colors.accentColor };
   font-weight: 400;
   padding: 1em 2em;

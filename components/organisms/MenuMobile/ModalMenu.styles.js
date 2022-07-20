@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ButtonSignUp } from "../../atoms/ButtonSignUp/ButtonSignUp";
 import { ButtonLogin } from "../../atoms/ButtonLogin/ButtonLogin";
-import { ButtonDemo } from "../../atoms/ButtonDemo/ButtonDemo";
+import { ButtonDashboard } from "../../atoms/ButtonDashboard/ButtonDashboard";
 
 export const MenuNav = styled.nav`
   width: 100%;
@@ -94,7 +94,7 @@ export const StyledButtonLogin = styled(ButtonLogin)`
   }
 `;
 
-export const StyledButtonDemo = styled(ButtonDemo)`
+export const StyledButtonDashboard = styled(ButtonDashboard)`
   display: flex;
   justify-content: center;
   width: 200px;
