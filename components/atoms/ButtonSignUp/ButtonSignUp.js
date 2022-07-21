@@ -7,6 +7,7 @@ export const ButtonSignUp = styled.a`
   border: none;
   cursor: pointer;
   text-align: center;
+  margin: 0 0.3em;
   
  
   
